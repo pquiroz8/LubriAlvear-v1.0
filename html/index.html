@@ -12,39 +12,37 @@
 <body>
     <header> <!-- /@audit-ok -->
         <nav class="nav">
-                <div class="button">
-                    <div class="icon">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
-                        <span>Inicio</span>
+            <div class="button">
+                <div class="icon">
+                    <i class="fa-solid fa-house"></i>
                 </div>
-                <div class="button">
-                    <div class="icon">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                        <span>Nosotros</span>
+                <span>Inicio</span>
                 </div>
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fa-solid fa-bell-concierge"></i>
-                        </div>
-                            <span>Servicios</span>
-                    </div>
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fa-solid fa-comment"></i>
-                            </div>
-                            <span>Contacto</span>
-                            </div>
-                
+            <div class="button">
+                <div class="icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <span>Nosotros</span>
+                </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                </div>
+                <span>Servicios</span>
+                </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <span>Contacto</span>
+                </div>
         </nav>        
     </header>
-<div class="flex-container">
-    <input class="input" type="button" value="CARGAR STOCK"></input>
-    <input class="input" type="button" value="COMPRAR"></input>
+<div class="flex-container"> <!-- //TODO: BOTON "MODIFICAR LISTA DE PRECIOS"  -->
+    <button class="btn" onclick="cargarStock()">CARGAR STOCK</button>
+    <button class="btn" onclick="realizarCompra()">COMPRAR</button>
 </div>
 
-
-    <script src="/js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
