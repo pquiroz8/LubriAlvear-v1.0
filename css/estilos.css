@@ -61,7 +61,9 @@ header{
     font-weight: 300;
     line-height: 60px;
     margin-left: 10px;
-}/* FIN HEADER */
+}
+
+/* FIN HEADER */
 
 .flex-container{
     display: flex;
@@ -76,6 +78,7 @@ header{
     padding: 8px;
     margin: 12px;
     border-radius: 20px;
+    overflow: visible;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     background: #FFE15D;
     width: 150px;
