@@ -16,9 +16,9 @@ function cargarStock(){  //@audit-ok
             this.prodPrice = prodPrice;
             this.iva = 0.21;
         }
-        applyIVA(){
+    /*  applyIVA(){
             this.prodPrice = this.prodPrice + (this.prodPrice * this.iva);
-        }
+        } */
     }
 
     //* Carga de productos

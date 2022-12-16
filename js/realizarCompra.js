@@ -10,9 +10,9 @@ const productos_catalogo = [
     {prodId:7, prodName:"Aceite Total 10w40", prodCategory:"Lubricantes", prodPrice:5140, prodStock:250},
     {prodId:8, prodName:"Kit seguridad reglamentario", prodCategory:"Otros", prodPrice:7800, prodStock:100}
 ];
-const prodVenta = [];
+const carritoCompra = []; //* Array donde se van a cargar los productos que se agreguen al carrito
 
-//*Función para realizar la compra de productos elegidos desde un catálogo
+//*Función para realizar la compra de productos elegidos desde un catálogo previamente establecido
 
 function realizarCompra(){
     let cargaCarrito = true;
@@ -32,16 +32,16 @@ function realizarCompra(){
         console.log(prodAgregado);
 
         if (prodAgregado != null){
-            prodVenta.push(prodAgregado);
+            carritoCompra.push(prodAgregado);
         } else {
             alert("Usted ingresó: " + productoEnCarrito + ".\n" + "Ningún producto se agregará a su carrito.");
         }
-        console.log(prodVenta);
+        console.log(carritoCompra);
         cargaCarrito = confirm("¿Desea agregar otro producto?");
     }
     
-    const prodVentaUnicos = eliminarDuplicados(prodVenta);
-    console.log(prodVentaUnicos);
+    const carritoCompraUnicos = eliminarDuplicados(carritoCompra);
+    console.log(carritoCompraUnicos);
 }
 
 //* Busco el producto con el Id ingresado, devuelvo null si ingresa un Id que no está registrado
@@ -50,8 +50,8 @@ function buscarProducto(id){
 }
 
 //* Función para eliminar elementos duplicados. De esta manera solo se mostrará una vez el producto ingresado
-function eliminarDuplicados(prodVenta){
-    const prodVentaUnicos = new Set (prodVenta);
-    const carritoSinDuplicados = [...prodVentaUnicos]
+function eliminarDuplicados(carritoCompra){
+    const carritoCompraUnicos = new Set (carritoCompra);
+    const carritoSinDuplicados = [...carritoCompraUnicos]
     return carritoSinDuplicados;
 }
