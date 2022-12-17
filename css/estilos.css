@@ -8,6 +8,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    background:#FCFFE7;
 }
 
 /* HEADER */
@@ -71,7 +72,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background:#FCFFE7;
     height: 100vh;
 } 
 
