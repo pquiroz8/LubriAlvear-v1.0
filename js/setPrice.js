@@ -14,7 +14,7 @@ let prodNewPrice;
 let prodSetPrice;*/
 
 function setPrice(){
-    alert("La funcionalidad de este botón será desarrollada para la próxima entrega");
+    alert("Esta funcionalidad está en etapa de desarrollo. Pronto podrá utilizarla.");
 }
     /*modifProducto = true;
     while (modifProducto) {
