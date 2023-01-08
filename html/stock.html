@@ -38,14 +38,45 @@
                 </div>
         </nav>        
     </header>
-    <div class="titulo">
-        <div class="titulo_contenido">
+    <div class="stock">
+        <div class="stock_contenido">
             <h1>Carga de stock</h1>
+            <p>A continuación, ingrese los datos del producto a agregar</p>
         </div>
-        <div class="titulo_contenido">
-            <button class="btn" onclick="cargarStock()">Cargar productos</a>
+        <div class="form">
+            <form class="form_stock" action="" method="post">
+                <div class="form_stock_Item">
+                    <label for="prodCat">Categoría</label>
+                    <input type=""  name="prodCategory" id="prodCat" placeholder="Categoría de Producto">
+                </div>
+
+                <div class="form_stock_Item">
+                    <label for="prodName">Nombre del producto</label>
+                    <input type="text" name="prodName" id="prodName" placeholder="Nombre del Producto">
+                </div>
+
+                <div class="form_stock_Item">
+                    <label for="prodUnits">Cantidad a agregar</label>
+                    <input type="text" name="prodUnits" id="prodUnits" placeholder="Cantidad a agregar">
+                </div>
+
+                <div class="form_stock_Item">
+                    <label for="unitPrice">Precio Unitario</label>
+                    <input type="number" name="prodPrice" id="unitPrice" placeholder="Precio Unitario">
+                </div>
+        </form>
+        </div>
+        <div class="form_stock_Item_btn">
+            <button class="btn" type="button">Agregar producto</button>
         </div>
         
+    </div>
+
+    <div class="lista_prod">
+            <h2>Productos cargados</h2>
+        <div class="lista_btn">
+            <button class="btn btn_lista" type="button">Finalizar carga</button>
+        </div>
     </div>
 
 <script src="/js/cargarStock.js"></script>

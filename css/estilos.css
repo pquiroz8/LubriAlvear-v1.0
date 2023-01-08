@@ -106,8 +106,56 @@ header{
     font-style: italic;
 }
 
-.titulo{
+/*STOCK*/
+
+.form{
+    margin-top: 12px;
+}
+
+.stock{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 58%;
+}
+
+.stock_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.stock_contenido h1{
+    text-align: center;
+}
+
+.form_stock_Item{
+    margin: 4px;
+    padding: 8px;
+}
+
+.form_stock_Item_btn{
+    text-align: center;
+}
+
+.form_stock_Item input{
+    width: 100%;
+}
+/*Lista productos*/
+
+.lista_prod{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 1px solid #717174;
+    box-sizing: border-box;
+    margin-top: 3px;
+}
+
+.lista_btn{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+.btn_lista{
+    justify-self: flex-end;
 }
