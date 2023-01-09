@@ -1,7 +1,7 @@
 function cargarStock(){  //@audit-ok
     //* Entrada de datos
     
-    let cargaProd = true;
+    /* let cargaProd = true;
     let sameCategory = true;
     let producto;
     console.log("¿Carga producto? " + cargaProd);
@@ -16,12 +16,63 @@ function cargarStock(){  //@audit-ok
             this.prodPrice = prodPrice;
             this.iva = 0.21;
         }
-    /*  applyIVA(){
+     applyIVA(){
             this.prodPrice = this.prodPrice + (this.prodPrice * this.iva);
         } */
     }
 
-    //* Carga de productos
+const cargarNuevoProducto =() => {
+    let prodCategory = document.getElementById("prodCat").options[document.getElementById("prodCat").selectedIndex].text;
+    let prodName = document.getElementById("prodName").value;
+    let prodUnits = document.getElementById("prodUnits").value;
+    let prodPrice = document.getElementById("unitPrice").value;
+    let prodId = 0; //@todo idGenerator ();
+
+    const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
+    localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo));
+
+    let nuevaFilaTabla = 
+    `<td>${productoNuevo.id}</td>
+    <td>${productoNuevo.category}</td>
+    <td>${productoNuevo.name}</td>
+    <td>${productoNuevo.price}</td>
+    <td>${productoNuevo.units}</td>`
+
+document.getElementById("tablaProd").insertRow().innerHTML = nuevaFilaTabla;
+}
+
+document.getElementById("btn-agregarProd").addEventListener("click",cargarNuevoProducto);
+document.getElementById("btn-agregarProd").addEventListener("click",document.getElementById("form_stock").reset());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* //* Carga de productos
     while (cargaProd) { ///@audit-ok 
             do{ //Validación para la categoría del producto
                 prodCategory = prompt("Ingrese la categoría del producto(Lubricantes/Electricidad/Otros)").toUpperCase();
@@ -63,3 +114,4 @@ function cargarStock(){  //@audit-ok
     alert("SE HAN CARGADO LOS SIGUIENTES PRODUCTOS: \n" + prodCargados);
 
 }
+ */
