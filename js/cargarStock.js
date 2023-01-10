@@ -1,75 +1,55 @@
-function cargarStock(){  //@audit-ok
-    //* Entrada de datos
-    
-    /* let cargaProd = true;
-    let sameCategory = true;
-    let producto;
-    console.log("¿Carga producto? " + cargaProd);
-    
-    const productosStock = [];
-    class Producto {
-        constructor (prodId, prodCategory, prodName, prodStock, prodPrice){
-            this.prodId = prodId;
-            this.prodName = prodName;
-            this.prodCategory = prodCategory;
-            this.prodStock = prodStock;
-            this.prodPrice = prodPrice;
-            this.iva = 0.21;
-        }
-     applyIVA(){
-            this.prodPrice = this.prodPrice + (this.prodPrice * this.iva);
-        } */
-    }
 
-const cargarNuevoProducto =() => {
+const cargarNuevoProducto = () => {
     let prodCategory = document.getElementById("prodCat").options[document.getElementById("prodCat").selectedIndex].text;
     let prodName = document.getElementById("prodName").value;
     let prodUnits = document.getElementById("prodUnits").value;
     let prodPrice = document.getElementById("unitPrice").value;
     let prodId = 0; //@todo idGenerator ();
 
-    const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
-    localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo));
+    if ((prodName != '')&&(prodUnits != 0)&&( prodPrice != '0')) {
+        const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
+        localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo));
 
-    let nuevaFilaTabla = 
-    `<td>${productoNuevo.id}</td>
-    <td>${productoNuevo.category}</td>
-    <td>${productoNuevo.name}</td>
-    <td>${productoNuevo.price}</td>
-    <td>${productoNuevo.units}</td>`
+        let nuevaFilaTabla = 
+            `<td>${productoNuevo.id}</td>
+            <td>${productoNuevo.category}</td>
+            <td>${productoNuevo.name}</td>
+            <td>${productoNuevo.price}</td>
+            <td>${productoNuevo.units}</td>`;
 
-document.getElementById("tablaProd").insertRow().innerHTML = nuevaFilaTabla;
+        document.getElementById("tablaProd").insertRow().innerHTML = nuevaFilaTabla;
+        
+        document.getElementById("prodName").value = '';
+        document.getElementById("unitPrice").value = '';
+        document.getElementById("prodUnits").value = ''; 
+    } else {
+        validarCarga();
+    }
+
 }
 
 document.getElementById("btn-agregarProd").addEventListener("click",cargarNuevoProducto);
-document.getElementById("btn-agregarProd").addEventListener("click",document.getElementById("form_stock").reset());
 
 
 
+function validarCarga () {
+    let prodName = document.getElementById("prodName").value;
+    let prodUnits = document.getElementById("prodUnits").value;
+    let prodPrice = document.getElementById("unitPrice").value;
+
+    (prodName.trim() == '') ? mostrarError("Nombre del producto") : (prodUnits == 0 ) ? mostrarError("Unidades") : (prodPrice == 0) ? mostrarError("Precio") : false
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function mostrarError(campo) {
+    Swal.fire({
+        title: 'Error',
+        text: 'Falta completar el campo ' + campo,
+        icon:'error',
+        background: '#282A3A',
+        color: '#FCFFE7',
+        confirmButtonText: '¡Entendido!'})
+}
 
 
     /* //* Carga de productos
@@ -112,6 +92,4 @@ document.getElementById("btn-agregarProd").addEventListener("click",document.get
             prodCargados += "Id: " + item.prodId + " - " + item.prodName + "    $ " + item.prodPrice + "    Stock: " + item.prodStock +"\n"; 
         }
     alert("SE HAN CARGADO LOS SIGUIENTES PRODUCTOS: \n" + prodCargados);
-
-}
- */
+}*/
