@@ -1,3 +1,5 @@
+let productosCargados = [];
+let productosCargadosJSON = [];
 
 const cargarNuevoProducto = () => {
     let prodCategory = document.getElementById("prodCat").options[document.getElementById("prodCat").selectedIndex].text;
@@ -6,9 +8,13 @@ const cargarNuevoProducto = () => {
     let prodPrice = document.getElementById("unitPrice").value;
     let prodId = 0; //@todo idGenerator ();
 
-    if ((prodName != '')&&(prodUnits != 0)&&( prodPrice != '0')) {
+    productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente
+
+    if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
         const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
-        localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo));
+        productosCargadosJSON.push(localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo))); //Cargo el producto creado al arreglo de json 
+        console.log(productosCargados);
+        console.log(typeof productosCargadosJSON); 
 
         let nuevaFilaTabla = 
             `<td>${productoNuevo.id}</td>
@@ -25,11 +31,20 @@ const cargarNuevoProducto = () => {
     } else {
         validarCarga();
     }
+    
+}
+
+const actualizarStock = () => {
+    console.log("VAMOS A GUARDAR LOS PRODUCTOS");
+    console.log(productosCargadosJSON);
+    console.log(typeof productosCargadosJSON);
 
 }
 
-document.getElementById("btn-agregarProd").addEventListener("click",cargarNuevoProducto);
 
+
+document.getElementById("btn-agregarProd").addEventListener("click",cargarNuevoProducto);
+document.getElementById("btn-actualizarStock").addEventListener("click",actualizarStock);
 
 function validarCarga () {
     let prodName = document.getElementById("prodName").value;
@@ -44,7 +59,11 @@ function mostrarError(campo) {
         title: 'Error',
         text: 'Falta completar el campo ' + campo,
         icon:'error',
+        iconColor:'#ecab0f',
         background: '#282A3A',
         color: '#FCFFE7',
-        confirmButtonText: '¡Entendido!'})
+        confirmButtonText: '¡Entendido!',
+        confirmButtonColor: '#ecab0f'})
 }
+
+
