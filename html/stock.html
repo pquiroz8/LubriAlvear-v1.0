@@ -47,7 +47,7 @@
             <form class="form_stock" action="" method="post">
                 <div class="form_stock_Item">
                     <label for="prodCat" hidden>Categoría</label>
-                    <select  name="prodCategory" id="prodCat" placeholder="Categoría de Producto">
+                    <select  name="prodCategory" id="prodCat" placeholder="Categoría de Producto" required>
                         <option value="FiltrosIny">Filtros de inyección</option>
                         <option value="FiltrosAgua">Filtros de agua</option>
                         <option value="AceiteUnSell">Aceite unidad sellada</option>
@@ -59,17 +59,17 @@
 
                 <div class="form_stock_Item">
                     <label for="prodName" hidden>Nombre del producto</label>
-                    <input type="text" name="prodName" id="prodName" placeholder="Nombre del Producto">
+                    <input type="text" name="prodName" id="prodName" placeholder="Nombre del Producto" required>
                 </div>
 
                 <div class="form_stock_Item">
                     <label for="unitPrice" hidden>Precio Unitario</label>
-                    <input type="number" name="prodPrice" id="unitPrice" placeholder="Precio Unitario">
+                    <input type="number" name="prodPrice" id="unitPrice" placeholder="Precio Unitario" required>
                 </div>
 
                 <div class="form_stock_Item">
                     <label for="prodUnits" hidden>Cantidad a agregar</label>
-                    <input type="number" name="prodUnits" id="prodUnits" placeholder="Cantidad a agregar">
+                    <input type="number" name="prodUnits" id="prodUnits" placeholder="Cantidad a agregar" required>
                 </div>
 
         </form>
@@ -94,10 +94,11 @@
                 </table>
             </div>
         <div class="lista_btn"></div>
-            <button class="btn btn_lista" type="button">Finalizar carga</button>
+            <button class="btn btn_lista" id="btn-actualizarStock" type="button">Finalizar carga</button>
         </div>
     </div>
 
 <script src="/js/cargarStock.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body> 
 </html>
