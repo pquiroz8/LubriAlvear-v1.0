@@ -34,13 +34,7 @@ const cargarNuevoProducto = () => {
     } else {
         validarCarga();
     }
-    
 
-    /* productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente */
-
-   /*  productosCargados = productosCargados.filter(prod => prod != null); */
-
-    /* localStorage.removeItem("productoNuevoJSON"); */
 }
 
 const actualizarStock = () => {
