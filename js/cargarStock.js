@@ -8,13 +8,12 @@ const cargarNuevoProducto = () => {
     let prodPrice = document.getElementById("unitPrice").value;
     let prodId = 0; //@todo idGenerator ();
 
-    productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente
+
+    /* productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente */
 
     if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
         const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
-        productosCargadosJSON.push(localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo))); //Cargo el producto creado al arreglo de json 
-        console.log(productosCargados);
-        console.log(typeof productosCargadosJSON); 
+        productosCargadosJSON.push(localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo))); //Cargo el producto creado al arreglo de json
 
         let nuevaFilaTabla = 
             `<td>${productoNuevo.id}</td>
@@ -32,6 +31,10 @@ const cargarNuevoProducto = () => {
         validarCarga();
     }
     
+    productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente
+    console.log(productosCargados);
+    console.log(typeof productosCargados);
+    
 }
 
 const actualizarStock = () => {
@@ -40,7 +43,6 @@ const actualizarStock = () => {
     console.log(typeof productosCargadosJSON);
 
 }
-
 
 
 document.getElementById("btn-agregarProd").addEventListener("click",cargarNuevoProducto);
