@@ -16,8 +16,7 @@ const cargarNuevoProducto = () => {
         console.log(productoNuevo);
         productosCargados.push(productoNuevo);
         console.log(productosCargados);
-        let productosCargadosJSON = localStorage.setItem("productosCargadosJSON", JSON.stringify(productosCargados));
-        /* productosCargadosJSON.push(productoNuevoJSON); //Cargo el producto creado al arreglo de json */
+        productosCargadosJSON = localStorage.setItem("productosCargadosJSON", JSON.stringify(productosCargados));
 
         let nuevaFilaTabla = 
             `<td>${productoNuevo.id}</td>
@@ -26,7 +25,7 @@ const cargarNuevoProducto = () => {
             <td>${productoNuevo.price}</td>
             <td>${productoNuevo.units}</td>`;
 
-        document.getElementById("tablaProd").insertRow().innerHTML = nuevaFilaTabla;
+        document.getElementById("tbody").insertRow().innerHTML = nuevaFilaTabla;
         
         document.getElementById("prodName").value = '';
         document.getElementById("unitPrice").value = '';
@@ -38,14 +37,35 @@ const cargarNuevoProducto = () => {
 }
 
 const actualizarStock = () => {
-    /* console.log(productosCargados); */
-    let productosGuardados = []; 
-    productosGuardados = productosCargados.push(JSON.parse(localStorage.getItem(productosCargadosJSON)));
-    console.log(productosGuardados);
-    let productosGuardadosJSON = productosGuardados.push(localStorage.setItem("productosGuardadosJSON",JSON.stringify(productosGuardados)));
-    /* console.log(productosGuardados); */
-
-}
+        Swal.fire({
+            title: '¿Revisaste?',
+            text:'Estás por modificar tu stock',
+            showDenyButton: true,
+            confirmButtonText: 'Todo en orden',
+            confirmButtonColor:'#ecab0f',
+            denyButtonText: `Voy a revisar`,
+            denyButtonColor:'#282A3A'
+        }).then((result) => {
+            if (result.isConfirmed) {
+            let productosGuardadosJSON = localStorage.setItem("productosGuardadosJSON", JSON.stringify(productosCargados));
+            localStorage.removeItem("productosCargadosJSON");
+            document.getElementById("tbody").remove();
+            swal.fire({
+                title: 'Los productos fueron guardados',
+                text: 'Tu stock se ha modificado',
+                type: 'success',
+                iconColor:'#ecab0f',
+                confirmButtonColor:'#ecab0f'})
+            } else if (result.isDenied) {
+                swal.fire({
+                    title: 'OK, Revisá',
+                    text: 'Por ahora nada ha cambiado',
+                    type: 'error',
+                    iconColor:'#ecab0f',
+                    confirmButtonColor:'#282A3A'})
+            }
+        })
+    }
 
 
 document.getElementById("btn-agregarProd").addEventListener("click",cargarNuevoProducto);
