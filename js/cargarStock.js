@@ -13,7 +13,11 @@ const cargarNuevoProducto = () => {
 
     if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
         const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
-        productosCargadosJSON.push(localStorage.setItem("productoNuevoJSON", JSON.stringify(productoNuevo))); //Cargo el producto creado al arreglo de json
+        console.log(productoNuevo);
+        productosCargados.push(productoNuevo);
+        console.log(productosCargados);
+        let productosCargadosJSON = localStorage.setItem("productosCargadosJSON", JSON.stringify(productosCargados));
+        /* productosCargadosJSON.push(productoNuevoJSON); //Cargo el producto creado al arreglo de json */
 
         let nuevaFilaTabla = 
             `<td>${productoNuevo.id}</td>
@@ -31,16 +35,21 @@ const cargarNuevoProducto = () => {
         validarCarga();
     }
     
-    productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente
-    console.log(productosCargados);
-    console.log(typeof productosCargados);
-    
+
+    /* productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente */
+
+   /*  productosCargados = productosCargados.filter(prod => prod != null); */
+
+    /* localStorage.removeItem("productoNuevoJSON"); */
 }
 
 const actualizarStock = () => {
-    console.log("VAMOS A GUARDAR LOS PRODUCTOS");
-    console.log(productosCargadosJSON);
-    console.log(typeof productosCargadosJSON);
+    /* console.log(productosCargados); */
+    let productosGuardados = []; 
+    productosGuardados = productosCargados.push(JSON.parse(localStorage.getItem(productosCargadosJSON)));
+    console.log(productosGuardados);
+    let productosGuardadosJSON = productosGuardados.push(localStorage.setItem("productosGuardadosJSON",JSON.stringify(productosGuardados)));
+    /* console.log(productosGuardados); */
 
 }
 
@@ -59,7 +68,7 @@ function validarCarga () {
 function mostrarError(campo) {
     Swal.fire({
         title: 'Error',
-        text: 'Falta completar el campo ' + campo,
+        text: 'Falta completar el campo: ' + campo,
         icon:'error',
         iconColor:'#ecab0f',
         background: '#282A3A',
