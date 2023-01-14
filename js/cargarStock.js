@@ -9,8 +9,6 @@ const cargarNuevoProducto = () => {
     let prodId = 0; //@todo idGenerator ();
 
 
-    /* productosCargados.push(JSON.parse(localStorage.getItem("productoNuevoJSON"))); // Recupero el producto cargado anteriormente */
-
     if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
         const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
         console.log(productoNuevo);

@@ -1,4 +1,54 @@
-//!Harcodeo los productos cargados porque no puedo traerme los valores cargados en cargarStock() hasta que no veamos storage
+document.addEventListener("DOMContentLoaded", function(event){
+    let productosEnStock = JSON.parse(localStorage.getItem("productosGuardadosJSON"));
+
+    productosEnStock.forEach( function(prodEnStock) {
+        console.log(prodEnStock);
+        let nuevaFilaTabla = 
+            `<td>${prodEnStock.id}</td>
+            <td>${prodEnStock.category}</td>
+            <td>${prodEnStock.name}</td>
+            <td>${prodEnStock.price}</td>
+            <td>${prodEnStock.units}</td>
+            <td><button class="btn" onclick="agregarProdCarrito()">Agregar al Carrito</button></td>`;
+
+        document.getElementById("tablebody").insertRow().innerHTML = nuevaFilaTabla;
+    });
+})
+
+
+const agregarProdCarrito = () => {
+    console.log("CARGAMOS EN EL CARRITO");
+}
+
+
+
+
+
+
+
+/* document.getElementsByClassName("agregarProdCarrito").addEventListener("click",agregarProdCarrito()); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //!Harcodeo los productos cargados porque no puedo traerme los valores cargados en cargarStock() hasta que no veamos storage
 
 const productosCatalogo = [
     {prodId:1, prodName:"Aceite Motul 5w30", prodCategory:"Lubricantes", prodPrice: 5140.00, prodStock:300},
@@ -57,4 +107,4 @@ function eliminarDuplicados(carritoCompra){
     const carritoCompraUnicos = new Set (carritoCompra);
     const carritoSinDuplicados = [...carritoCompraUnicos]
     return carritoSinDuplicados;
-}
+} */
