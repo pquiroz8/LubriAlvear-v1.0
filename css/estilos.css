@@ -146,7 +146,7 @@ header{
 .lista_prod{
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     border-top: 1px solid #717174;
     box-sizing: border-box;
     margin-top: 3px;
@@ -158,4 +158,29 @@ header{
 }
 .btn_lista{
     justify-self: flex-end;
+}
+
+
+.tablaProd{
+    border-collapse:collapse; 
+    margin: 25px 0; 
+    border: solid 1px #282A3A;
+    padding: 4px;
+    text-align: center;
+    background-color: FAF9EA;
+    min-width: 450px;
+}
+
+.tablaProd th{
+    padding: 12px 4px;
+    text-align: center;
+    min-width: 100px;
+    font-size: large;
+}
+
+.newRow{
+    padding: 4px;
+    text-align: center;
+    font-size: smaller;
+    border-color: #282A3A;
 }

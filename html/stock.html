@@ -48,12 +48,12 @@
                 <div class="form_stock_Item">
                     <label for="prodCat" hidden>Categoría</label>
                     <select  name="prodCategory" id="prodCat" placeholder="Categoría de Producto" required>
-                        <option value="FiltrosIny">Filtros de inyección</option>
-                        <option value="FiltrosAgua">Filtros de agua</option>
-                        <option value="AceiteUnSell">Aceite unidad sellada</option>
-                        <option value="AceiteElem">Aceite elemento</option>
-                        <option value="MangueraCrist">Manguera cristal</option>
-                        <option value="MangueraHidroc">Manguera hidrocarburos</option>
+                        <option value="FIN">Filtros de inyección</option>
+                        <option value="FAG">Filtros de agua</option>
+                        <option value="AUS">Aceite unidad sellada</option>
+                        <option value="AEL">Aceite elemento</option>
+                        <option value="MCR">Manguera cristal</option>
+                        <option value="MHI">Manguera hidrocarburos</option>
                     </select>
                 </div>
 
@@ -83,14 +83,16 @@
     <div class="lista_prod">
         <h2>Productos cargados</h2>
             <div class="tablaProd-container">
-                <table id="tablaProd">
-                    <tr>
-                        <th>Código</th>
-                        <th>Categoría</th>
-                        <th>Aplicación</th>
-                        <th>Precio Unitario</th>
-                        <th>Unidades</th>
-                    </tr>
+                <table class="tablaProd" id="tablaProd">
+                    <thead class="thead">
+                        <tr>
+                            <th>Código</th>
+                            <th>Categoría</th>
+                            <th>Aplicación</th>
+                            <th>Precio Unitario</th>
+                            <th>Unidades</th>
+                        </tr>
+                    </thead>
                     <tbody id="tbody">
 
                     </tbody>

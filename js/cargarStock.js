@@ -2,26 +2,24 @@ let productosCargados = [];
 let productosCargadosJSON = [];
 
 const cargarNuevoProducto = () => {
-    let prodCategory = document.getElementById("prodCat").options[document.getElementById("prodCat").selectedIndex].text;
+    let prodCategory = document.getElementById("prodCat").options[document.getElementById("prodCat").selectedIndex];
     let prodName = document.getElementById("prodName").value;
     let prodUnits = document.getElementById("prodUnits").value;
     let prodPrice = document.getElementById("unitPrice").value;
-    let prodId = 0; //@todo idGenerator ();
+    let prodId = generarID(prodCategory);
 
-
-    if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
-        const productoNuevo = {id:prodId, category:prodCategory, name:prodName, units:prodUnits, price:prodPrice}
-        console.log(productoNuevo);
+if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
+        const productoNuevo = {id:prodId, category:prodCategory.text, name:prodName, units:prodUnits, price:prodPrice}
         productosCargados.push(productoNuevo);
         console.log(productosCargados);
         productosCargadosJSON = localStorage.setItem("productosCargadosJSON", JSON.stringify(productosCargados));
 
         let nuevaFilaTabla = 
-            `<td>${productoNuevo.id}</td>
-            <td>${productoNuevo.category}</td>
-            <td>${productoNuevo.name}</td>
-            <td>${productoNuevo.price}</td>
-            <td>${productoNuevo.units}</td>`;
+            `<td class="newRow">${productoNuevo.id}</td>
+            <td class="newRow">${productoNuevo.category}</td>
+            <td class="newRow">${productoNuevo.name}</td>
+            <td class="newRow">${productoNuevo.price}</td>
+            <td class="newRow">${productoNuevo.units}</td>`;
 
         document.getElementById("tbody").insertRow().innerHTML = nuevaFilaTabla;
         
@@ -32,7 +30,7 @@ const cargarNuevoProducto = () => {
         validarCarga();
     }
 
-}
+} 
 
 const actualizarStock = () => {
         Swal.fire({
@@ -90,3 +88,10 @@ function mostrarError(campo) {
 }
 
 
+const generarID = (prodCategory) => {
+    let prodValueId = prodCategory.value;
+    let prodNumber = Math.ceil(Math.random()*1000);;
+    let prodCategoryId = prodValueId.concat(prodNumber);
+    
+    return prodCategoryId;
+}
