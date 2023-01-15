@@ -153,8 +153,8 @@ header{
 }
 
 .lista_btn{
-    align-self: flex-end;
-    justify-self: flex-end;
+    align-self: center;
+    justify-self: center;
 }
 .btn_lista{
     justify-self: flex-end;
@@ -178,9 +178,13 @@ header{
     font-size: large;
 }
 
-.newRow{
+.newRow, .newRow-id{
     padding: 4px;
     text-align: center;
     font-size: smaller;
     border-color: #282A3A;
+}
+
+.newRow-id{
+    text-align: left;
 }

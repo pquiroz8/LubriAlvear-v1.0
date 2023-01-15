@@ -15,7 +15,7 @@ if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
         productosCargadosJSON = localStorage.setItem("productosCargadosJSON", JSON.stringify(productosCargados));
 
         let nuevaFilaTabla = 
-            `<td class="newRow">${productoNuevo.id}</td>
+            `<td class="newRow-id">${productoNuevo.id}</td>
             <td class="newRow">${productoNuevo.category}</td>
             <td class="newRow">${productoNuevo.name}</td>
             <td class="newRow">${productoNuevo.price}</td>
@@ -72,13 +72,15 @@ function validarCarga () {
     let prodUnits = document.getElementById("prodUnits").value;
     let prodPrice = document.getElementById("unitPrice").value;
 
-    (prodName.trim() == '') ? mostrarError("Nombre del producto") : (prodUnits == 0 ) ? mostrarError("Unidades") : (prodPrice == 0) ? mostrarError("Precio") : false
+    /* Number.isInteger(prodName) ? mostrarError() */
+
+    (prodName.trim() == '') ? mostrarError("Nombre del producto") : (prodPrice == 0) ? mostrarError("Precio") : (prodUnits == 0 ) ? mostrarError("Unidades") : false
 }
 
 function mostrarError(campo) {
     Swal.fire({
         title: 'Error',
-        text: 'Falta completar el campo: ' + campo,
+        text: 'Error al completar el campo: ' + campo,
         icon:'error',
         iconColor:'#ecab0f',
         background: '#282A3A',
