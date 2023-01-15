@@ -50,7 +50,7 @@ const setProductPrice = () => {
 
         Swal.fire({
             title: '¿Revisaste?',
-            text:'Estás por modificar modificar el precio del producto',
+            text:'Estás por modificar el precio del producto',
             showDenyButton: true,
             confirmButtonText: 'Todo en orden',
             confirmButtonColor:'#ecab0f',

@@ -39,27 +39,27 @@
         </nav>        
     </header>
 
-    <div class="titulo">
-        <div class="titulo_contenido">
+    <div class="prodVenta-container">
+        <div class="prodVenta-item">
             <h1>Productos en stock</h1>
             <p>Seleccione los productos que desea comprar</p>
         </div>
         <div class="tabla-stock-container">
             <table id="stockTable">
-                <tr>
-                    <th>Código</th>
-                    <th>Categoría</th>
-                    <th>Nombre del Producto</th>
-                    <th>Precio Unitario</th>
-                    <th>Unidades</th>
-                </tr>
-                <tbody id="tablebody">
-
-                </tbody>
+                <thead class="thead">
+                    <tr>
+                        <th>Código</th>
+                        <th>Categoría</th>
+                        <th>Nombre del Producto</th>
+                        <th>Precio Unitario</th>
+                        <th>Unidades</th>
+                    </tr>
+            </thead>
+                <tbody id="tablebody"></tbody>
             </table>
         </div>
         <div class="titulo_contenido">
-            <button class="btn" onclick="realizarCompra()">Realizar compra</a>
+            <button class="btn" id="realizarCompra">Realizar compra</a>
         </div>
         
     </div>

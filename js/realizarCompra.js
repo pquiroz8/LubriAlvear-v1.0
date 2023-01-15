@@ -17,16 +17,27 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 
 const agregarProdCarrito = () => {
-    console.log("CARGAMOS EN EL CARRITO");
+    Swal.fire({
+        title:'¿Y la funcionalidad?',
+        text:'Tranquilo... Pronto podrás disfrutarla',
+        icon:'question',
+        iconColor:'#ecab0f',
+        confirmButtonColor:'#282A3A'})
+}
+
+const realizarCompra = () => {
+    Swal.fire({
+        title:'¿Y la funcionalidad?',
+        text:'Tranquilo... Pronto podrás disfrutarla',
+        icon:'question',
+        iconColor:'#ecab0f',
+        confirmButtonColor:'#282A3A'})
 }
 
 
 
 
-
-
-
-/* document.getElementsByClassName("agregarProdCarrito").addEventListener("click",agregarProdCarrito()); */
+document.getElementsById("realizarCompra").addEventListener("click",realizarCompra);
 
 
 

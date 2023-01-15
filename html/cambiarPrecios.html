@@ -61,25 +61,25 @@
     </div>
 
     <div class="formSetPrice-container" id="formSetPrice-container">
-        <form action="" method="post" id="formSetPrice" style="display: none;">
-            <div class="form_stock_Item">
+        <form action="" method="post" class="formSetPrice" id="formSetPrice" style="display: none;">
+            <div class="form_stock_Items">
                 <label for="prodCat" hidden>Categoría</label>
                 <select name="prodCategory" id="prodCat" placeholder="Categoría de Producto" required>
                     <option value="OpcionInicial" selected>Seleccione un producto por su código</option>
                 </select>
             </div>
 
-            <div class="form_stock_Item">
+            <div class="form_stock_Items">
                 <label for="prodName">Nombre del producto:</label>
                 <p id="prodEditName"></p>
             </div>
 
-            <div class="form_stock_Item">
+            <div class="form_stock_Items">
                 <label for="unitPrice">Precio Actual:</label>
                 <p id="prodEditUnitPrice"></p>
             </div>
 
-            <div class="form_stock_Item">
+            <div class="form_stock_Items">
                 <label for="prodNewPrice" >Nuevo precio</label>
                 <input type="number" name="prodNewPrice" id="prodNewPrice" placeholder="Nuevo precio" required>
             </div>
