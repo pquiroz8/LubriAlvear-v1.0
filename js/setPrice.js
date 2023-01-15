@@ -45,14 +45,50 @@ const addOptions = (array) => {
 const setProductPrice = () => {
     const newPrice = document.getElementById("prodNewPrice").value;
     let prodSelected = findSelectedProd(prodCambiarPrecio);
-    prodSelected.price = newPrice;
-    console.log(prodSelected.price);
-    console.log(prodSelected);
-    console.log(prodCambiarPrecio);
+    
+    if (newPrice > 0) {
 
-
+        Swal.fire({
+            title: '¿Revisaste?',
+            text:'Estás por modificar modificar el precio del producto',
+            showDenyButton: true,
+            confirmButtonText: 'Todo en orden',
+            confirmButtonColor:'#ecab0f',
+            denyButtonText: `Voy a revisar`,
+            denyButtonColor:'#282A3A'
+        }).then((result) => {
+            if (result.isConfirmed) {
+            prodSelected.price = newPrice;
+            let productosConCambioDePrecioJSON = localStorage.setItem("ProdModifiedJSON",JSON.stringify(prodSelected));
+            swal.fire({
+                title: 'Cambio realizado',
+                text: 'El precio del producto fue cambiado',
+                type: 'success',
+                iconColor:'#ecab0f',
+                confirmButtonColor:'#ecab0f'})
+            } else if (result.isDenied) {
+                swal.fire({
+                    title: 'OK, Revisá',
+                    text: 'Por ahora nada ha cambiado',
+                    type: 'error',
+                    iconColor:'#ecab0f',
+                    confirmButtonColor:'#282A3A'})
+            }
+        })
+    } else {
+        Swal.fire({
+            title: 'Error',
+            text: 'El precio debe ser mayor que cero',
+            icon:'error',
+            iconColor:'#ecab0f',
+            background: '#282A3A',
+            color: '#FCFFE7',
+            confirmButtonText: '¡Entendido!',
+            confirmButtonColor: '#ecab0f'})
+    }
 }
 
+//*Buscamos el producto seleccionado en el select
 const findSelectedProd = (objArray) => {
     let idSelected = document.getElementById("prodCat").options[document.getElementById("prodCat").selectedIndex].text;
     const productEdited = objArray.find(prodEdited => prodEdited.id === idSelected);
