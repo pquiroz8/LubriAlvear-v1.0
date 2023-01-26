@@ -1,0 +1,1843 @@
+[
+ {
+  "id": "N1008",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) CHEVR CORSA, ASTRA, MERIVA, VECTRA -",
+  "precio": 1464.1,
+  "cantidad": 1
+ },
+ {
+  "id": "N1016",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) PEUGEOT 206, 306, PARTNER 1.6, 2.0",
+  "precio": 1331,
+  "cantidad": 1
+ },
+ {
+  "id": "N1006",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FORD FIESTA 1.6, FIESTA MAX, ECOSP",
+  "precio": 1494.05,
+  "cantidad": 1
+ },
+ {
+  "id": "N1012",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FIAT UNO, FIORINO  FIRE  2004=>",
+  "precio": 1577.91,
+  "cantidad": 1
+ },
+ {
+  "id": "N1011",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FIAT PALIO, SIENA 1.3i, 1.6i, DUNA 1",
+  "precio": 1697.55,
+  "cantidad": 1
+ },
+ {
+  "id": "N1010",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) VW GOL, SAVEIRO 1.0i, 1.6i 8V, FOX 1",
+  "precio": 1815,
+  "cantidad": 1
+ },
+ {
+  "id": "N1001",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) VW GOLF IV 1,6 - 04=> C\/VAL.",
+  "precio": 7721.3,
+  "cantidad": 1
+ },
+ {
+  "id": "N1002",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) VW POLO CLASSIC, GNC 2002=> SEAT IBI",
+  "precio": 2437.91,
+  "cantidad": 1
+ },
+ {
+  "id": "N1003",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) RENAULT, PEUGEOT, VOLKSWAGEN",
+  "precio": 2595.19,
+  "cantidad": 1
+ },
+ {
+  "id": "N1004",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FORD ESCORT 1.8 , FIESTA 1.4, 1.6,,,",
+  "precio": 3002.75,
+  "cantidad": 1
+ },
+ {
+  "id": "N1005",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FORD EXPLORER 4X4, RANGER, F-100",
+  "precio": 1650.24,
+  "cantidad": 1
+ },
+ {
+  "id": "N1007",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FORD MONDEO, FIESTA 1.3",
+  "precio": 1650.24,
+  "cantidad": 1
+ },
+ {
+  "id": "N1009",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) VW POINTER, QUANTUM, GALAXY",
+  "precio": 3002.75,
+  "cantidad": 1
+ },
+ {
+  "id": "N1013",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) VW BORA 2.0, GOLF 1.6, 1.8, 2.0",
+  "precio": 1940.46,
+  "cantidad": 1
+ },
+ {
+  "id": "N1017",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FORD RANGER 2.5 IVCT 166 CV 2012=> ",
+  "precio": 4804.33,
+  "cantidad": 1
+ },
+ {
+  "id": "N1018",
+  "categoria": "FILTROS DE INYECCIÓN",
+  "nombre": "(A) FIAT MOBI 1.0, CRONOS 1.8 TORO 1.6",
+  "precio": 1397.22,
+  "cantidad": 1
+ },
+ {
+  "id": "M7001E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(D) ACEITE HONDA 650-1000\/KAWASAKI 650",
+  "precio": 1041.98,
+  "cantidad": 1
+ },
+ {
+  "id": "M7002E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(D) ACEITE HONDA 250-500",
+  "precio": 1022.22,
+  "cantidad": 1
+ },
+ {
+  "id": "M7003S",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(B) ACEITE KAWASAKI",
+  "precio": 1364.36,
+  "cantidad": 1
+ },
+ {
+  "id": "M7004E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(D) ACEITE SUZUKI 250-1100",
+  "precio": 735.61,
+  "cantidad": 1
+ },
+ {
+  "id": "M7005E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(D) ACEITE YAMAHA",
+  "precio": 692.59,
+  "cantidad": 1
+ },
+ {
+  "id": "M7007E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(C) ACEITE SUZUKI DR 350",
+  "precio": 1494.22,
+  "cantidad": 1
+ },
+ {
+  "id": "M7008E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(A) ACEITE HONDA XR 250",
+  "precio": 554.09,
+  "cantidad": 1
+ },
+ {
+  "id": "M7009E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(D) ACEITE KAWASAKI 200",
+  "precio": 398.72,
+  "cantidad": 1
+ },
+ {
+  "id": "M7010E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(C) AIRE ZANELLA 125 aire ovalado",
+  "precio": 825.72,
+  "cantidad": 1
+ },
+ {
+  "id": "M7012E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(D) ACEITE BONUS 125cc Nº15400-N01-0000",
+  "precio": 588.8,
+  "cantidad": 1
+ },
+ {
+  "id": "M7013E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(B) ACEITE HYOSUNG 125cc. Nº16510-05240",
+  "precio": 585.68,
+  "cantidad": 1
+ },
+ {
+  "id": "M7014S",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(D) ACEITE SUZUKI-HONDA 16510-06B001",
+  "precio": 1287.64,
+  "cantidad": 1
+ },
+ {
+  "id": "M7015E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(B) AIRE GUERRERO MAGIC, HONDA C50, C",
+  "precio": 885.16,
+  "cantidad": 1
+ },
+ {
+  "id": "M7016E",
+  "categoria": "FILTROS MOTOS",
+  "nombre": "(A) AIRE MOTO UNIVERSAL",
+  "precio": 1064.12,
+  "cantidad": 1
+ },
+ {
+  "id": "H2001",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT TRACTORES h 180 8305111\/8308721",
+  "precio": 3430.25,
+  "cantidad": 6
+ },
+ {
+  "id": "H2002",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT Camiones \/ VALMET Tractores h 2",
+  "precio": 5577.36,
+  "cantidad": 6
+ },
+ {
+  "id": "H2004",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MAZDA \/ KIA \/ KORANDO \/MITSUBISHI Ø",
+  "precio": 2567.7,
+  "cantidad": 6
+ },
+ {
+  "id": "H2011",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FORD FALCON \/ NISSAN",
+  "precio": 2105.95,
+  "cantidad": 12
+ },
+ {
+  "id": "H2012",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FIAT TRACTORES \/ DAILY h 140 1909102",
+  "precio": 3006.27,
+  "cantidad": 6
+ },
+ {
+  "id": "H2012D",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT DAILY Doble filtrado",
+  "precio": 4598,
+  "cantidad": 6
+ },
+ {
+  "id": "H2013",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) PERKINS 004115 (Corto)",
+  "precio": 2068.67,
+  "cantidad": 12
+ },
+ {
+  "id": "H2014",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) MITSUBISHI \/ MAZDA f\/doble MDO 69782",
+  "precio": 3863.16,
+  "cantidad": 6
+ },
+ {
+  "id": "H2015",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) PERKINS 004125 (Largo)",
+  "precio": 2828.99,
+  "cantidad": 12
+ },
+ {
+  "id": "H2019",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) DEUTZ 300 8001 h 90",
+  "precio": 2334.35,
+  "cantidad": 12
+ },
+ {
+  "id": "H2021",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) DEUTZ 300 2261 \/ FIAT \/ FORD \/ VALME",
+  "precio": 3914.34,
+  "cantidad": 12
+ },
+ {
+  "id": "H2022",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) DEUTZ 116-4406 h 260",
+  "precio": 6439.95,
+  "cantidad": 6
+ },
+ {
+  "id": "H2026",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FORD FIESTA- COURIER  nafta,diesel",
+  "precio": 1626.08,
+  "cantidad": 12
+ },
+ {
+  "id": "H2028",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) J.DEERE AR-58956 \/ AJ52400 CIMARRON",
+  "precio": 2752.9,
+  "cantidad": 12
+ },
+ {
+  "id": "H2033",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) CATERPILLAR \/ MACK \/ VOLVO \/ RENAULT",
+  "precio": 6341.63,
+  "cantidad": 6
+ },
+ {
+  "id": "H2037",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FIAT IVECO DAILY 3.0  08=> ZANELLO h",
+  "precio": 2634.71,
+  "cantidad": 12
+ },
+ {
+  "id": "H2038",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) ZANELLO h 200",
+  "precio": 3519.86,
+  "cantidad": 12
+ },
+ {
+  "id": "H2039",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) KIA \/ MAZDA - MPV - 121",
+  "precio": 1434.78,
+  "cantidad": 12
+ },
+ {
+  "id": "H2046",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CATERPILLAR \/ M.BENZ Caja automat. W",
+  "precio": 2849.85,
+  "cantidad": 12
+ },
+ {
+  "id": "H2048",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT DUNA  1.3 Diesel \/ SCANIA \/ FOR",
+  "precio": 2031.49,
+  "cantidad": 12
+ },
+ {
+  "id": "H2053",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CITROEN 3CV - AMI 8  AM223105A",
+  "precio": 1704.55,
+  "cantidad": 12
+ },
+ {
+  "id": "H2055",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CITROEN - GSA - GSX3 - GS BREAK",
+  "precio": 1642.58,
+  "cantidad": 12
+ },
+ {
+  "id": "H2056",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CITROEN - DYANE - VISA nafta,diesel",
+  "precio": 1699.48,
+  "cantidad": 12
+ },
+ {
+  "id": "H2057",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) CHEVROLET 400 \/ CHEVY GM 2794128",
+  "precio": 1915.52,
+  "cantidad": 12
+ },
+ {
+  "id": "H2058",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) GMC \/ CHEVETTE con tuerca",
+  "precio": 1741.84,
+  "cantidad": 12
+ },
+ {
+  "id": "H2059",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CHEVROLET LUMINA - BLAZER",
+  "precio": 1831.39,
+  "cantidad": 12
+ },
+ {
+  "id": "H2062",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) NISSAN CAMION turbo h180 Rosca 1\"1\/8",
+  "precio": 3195.23,
+  "cantidad": 12
+ },
+ {
+  "id": "H2063",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FORD KA \/ DAIHATSU 15601 \/ BMW 316-3",
+  "precio": 1541.19,
+  "cantidad": 12
+ },
+ {
+  "id": "H2064",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) VOLVO PENTA MARINO \/ LAIDONG Ø 106",
+  "precio": 3421.03,
+  "cantidad": 6
+ },
+ {
+  "id": "H2065",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) DAIHATSU APPLAUSE",
+  "precio": 1407.18,
+  "cantidad": 12
+ },
+ {
+  "id": "H2068",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) DODGE 1500 \/ FIAT 133 TOP IAVA - 147",
+  "precio": 1856.28,
+  "cantidad": 12
+ },
+ {
+  "id": "H2069",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) POLO diesel  \/ CHEVROLET-MAXION \/ RA",
+  "precio": 2167.66,
+  "cantidad": 12
+ },
+ {
+  "id": "H2070",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) YALE PN778000.24-c\/tuerca",
+  "precio": 3461.01,
+  "cantidad": 6
+ },
+ {
+  "id": "H2073",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) FIAT 600R c\/tuerca",
+  "precio": 1841.26,
+  "cantidad": 12
+ },
+ {
+  "id": "H2074",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) FIAT 1500 \/ 1600 - 8304226",
+  "precio": 2569.81,
+  "cantidad": 12
+ },
+ {
+  "id": "H2075",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FIAT  1.7 Diesel - 125 \/ LANCIA Ø106",
+  "precio": 2320.44,
+  "cantidad": 6
+ },
+ {
+  "id": "H2076",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT (Minifiltro) \/ FORD ESCORT 1.8",
+  "precio": 1686.96,
+  "cantidad": 12
+ },
+ {
+  "id": "H2077",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) HYUNDAI 250-350 Ø106 Rosca 20x1.5",
+  "precio": 3489.95,
+  "cantidad": 6
+ },
+ {
+  "id": "H2078",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT VIVACE 1044861-h60",
+  "precio": 1607.73,
+  "cantidad": 12
+ },
+ {
+  "id": "H2079",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MAZDA T4000 Ø92 Rosca 20x1.5",
+  "precio": 2576.04,
+  "cantidad": 12
+ },
+ {
+  "id": "H2080",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MAZDA 2,5  Ø 106 R. 24x1.5",
+  "precio": 3667.17,
+  "cantidad": 6
+ },
+ {
+  "id": "H2081",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CHEVROLET C10 \/ FIAT \/ PEUGEOT \/  CI",
+  "precio": 2027.6,
+  "cantidad": 12
+ },
+ {
+  "id": "H2083",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) RENAULT EXPRESS \/ CLIO diesel h 120",
+  "precio": 2835.93,
+  "cantidad": 12
+ },
+ {
+  "id": "H2085",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) VOLKSWAGEN c\/motor AUDI  s\/valvula",
+  "precio": 1908.11,
+  "cantidad": 12
+ },
+ {
+  "id": "H2086",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) VOLKSWAGEN c\/motor AUDI c\/válvula",
+  "precio": 2366.11,
+  "cantidad": 12
+ },
+ {
+  "id": "H2088",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FORD 100 C\/MOTOR MWM \/ CATERPILLAR h",
+  "precio": 2349.15,
+  "cantidad": 12
+ },
+ {
+  "id": "H2089",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) M.BENZ CAMION\/OMNIBUS",
+  "precio": 3417.14,
+  "cantidad": 6
+ },
+ {
+  "id": "H2090",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) HONDA ACCORD =>81 Rosca 22x1.5",
+  "precio": 1869.01,
+  "cantidad": 12
+ },
+ {
+  "id": "H2091",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) HONDA CIVIC 81=> Rosca 20x1.5",
+  "precio": 1857.38,
+  "cantidad": 12
+ },
+ {
+  "id": "H2092",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) ISUZU - PICKUP 80 =>",
+  "precio": 2097.92,
+  "cantidad": 12
+ },
+ {
+  "id": "H2094",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) CHEVROLET LUV \/ ISUZU 94430983",
+  "precio": 2219.43,
+  "cantidad": 12
+ },
+ {
+  "id": "H2095",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MITSUBISHI - ISUZU TROPER",
+  "precio": 1731.22,
+  "cantidad": 12
+ },
+ {
+  "id": "H2107",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) TRACTOR FORD \/ VALMET",
+  "precio": 3751.43,
+  "cantidad": 6
+ },
+ {
+  "id": "H2110",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) TOYOTA CELICA, COROLLA, CRECIDA",
+  "precio": 1961.76,
+  "cantidad": 12
+ },
+ {
+  "id": "H2111",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) ISUZU 894360427 \/ MAZDA 323d h 130 R",
+  "precio": 3392.64,
+  "cantidad": 12
+ },
+ {
+  "id": "H2112",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) NISSAN \/ VOLVO \/ CASE Rosca 1\"x12",
+  "precio": 3177.7,
+  "cantidad": 12
+ },
+ {
+  "id": "H2114",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) ROVER\/PERKINS PRIMA Rosca 13\/16x16",
+  "precio": 2067.18,
+  "cantidad": 12
+ },
+ {
+  "id": "H2116",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) ROVER VARIOS Rosca 13\/16x16",
+  "precio": 1723.35,
+  "cantidad": 12
+ },
+ {
+  "id": "H2118",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) PEUGEOT Rosca 18x1.5 =>84",
+  "precio": 1660.21,
+  "cantidad": 12
+ },
+ {
+  "id": "H2119",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) PEUGEOT \/ CITROEN Rosca 20x1.5 85=>",
+  "precio": 1709.44,
+  "cantidad": 12
+ },
+ {
+  "id": "H2120",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) RENAULT (1.9 TRAFIC\/18\/21 2.0 nafta",
+  "precio": 1849.42,
+  "cantidad": 12
+ },
+ {
+  "id": "H2122",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) RENAULT IKA 4 L \/ BOUNOUS",
+  "precio": 2445.02,
+  "cantidad": 12
+ },
+ {
+  "id": "H2123",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) RENAULT 12 - 9 - 11 Rosca 3\/4x16 =>",
+  "precio": 1635.2,
+  "cantidad": 12
+ },
+ {
+  "id": "H2124",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MAZDA - E3000",
+  "precio": 3456.29,
+  "cantidad": 6
+ },
+ {
+  "id": "H2125",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) RENAULT 12 - 9 - 11 Rosca 20x1.5 =>",
+  "precio": 1750.28,
+  "cantidad": 12
+ },
+ {
+  "id": "H2126",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FORD TRANSIT =>2000 Rosca 22x1.5",
+  "precio": 1976.85,
+  "cantidad": 12
+ },
+ {
+  "id": "H2127",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) CLIO, KANGOO, TWINGO 1,2",
+  "precio": 1491.59,
+  "cantidad": 12
+ },
+ {
+  "id": "H2128",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) RENAULT  11 TURBO Rosca 20x1.5",
+  "precio": 1637.95,
+  "cantidad": 12
+ },
+ {
+  "id": "H2131",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) PEUGEOT \/ INDENOR",
+  "precio": 2160.02,
+  "cantidad": 12
+ },
+ {
+  "id": "H2135",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) SUZUKI BALENO - CARRIER",
+  "precio": 1845.26,
+  "cantidad": 12
+ },
+ {
+  "id": "H2136",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) MITSUBISHI - HYUNDAI (H2014) Ø92",
+  "precio": 3074.43,
+  "cantidad": 12
+ },
+ {
+  "id": "H2146",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) TOYOTA COROLLA nafta 98 >2004  90915",
+  "precio": 1366.58,
+  "cantidad": 20
+ },
+ {
+  "id": "H2148",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) SUZUKI SWIFT 16510-60B01 h 68",
+  "precio": 1601.61,
+  "cantidad": 24
+ },
+ {
+  "id": "H2151",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) TOYOTA  COROLLA diesel Nº 90915-0300",
+  "precio": 3246.07,
+  "cantidad": 6
+ },
+ {
+  "id": "H2155",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) CHEVROLET CORSA diesel \/ MAZDA",
+  "precio": 1511.2,
+  "cantidad": 20
+ },
+ {
+  "id": "H2157",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) RENAULT 19 c\/tuerca rosca 20x1.5",
+  "precio": 1602.56,
+  "cantidad": 12
+ },
+ {
+  "id": "H2159",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) CHEVR ASTRA,CORSA,MERIVA,SUZUKI",
+  "precio": 1399.03,
+  "cantidad": 12
+ },
+ {
+  "id": "H2161",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CHEVROLET-LUV nafta \/ MAZDA 626 - 92",
+  "precio": 1798.28,
+  "cantidad": 12
+ },
+ {
+  "id": "H2162",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) DATSUN 15208-65014",
+  "precio": 1691.15,
+  "cantidad": 12
+ },
+ {
+  "id": "H2167",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FORD F-100 c\/motor CUMMINS 4BT h130",
+  "precio": 2823.54,
+  "cantidad": 12
+ },
+ {
+  "id": "H2168",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) F. CARGO (C1416; 1517; 1522; 1716-08",
+  "precio": 2752.85,
+  "cantidad": 12
+ },
+ {
+  "id": "H2169",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) SUZUKI VITARA 1600",
+  "precio": 1762.29,
+  "cantidad": 12
+ },
+ {
+  "id": "H2173",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MAZDA - B2200 by pass Ø 81",
+  "precio": 2053.17,
+  "cantidad": 12
+ },
+ {
+  "id": "H2178",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) DAEWO \/ TICO \/ DAMAS \/ LABO",
+  "precio": 1901.7,
+  "cantidad": 12
+ },
+ {
+  "id": "H2179",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) KIA TOPIC 2.7 - PREGIO h 180",
+  "precio": 3186.8,
+  "cantidad": 12
+ },
+ {
+  "id": "H2182",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) KIA - 1.8 - 2.4 - CERES",
+  "precio": 2128.97,
+  "cantidad": 12
+ },
+ {
+  "id": "H2183",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT SIENA\/PALIO 1,6  Rosca 20x1.5",
+  "precio": 1648.16,
+  "cantidad": 12
+ },
+ {
+  "id": "H2185",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) THERMO KING 115703-113746",
+  "precio": 3515.6,
+  "cantidad": 6
+ },
+ {
+  "id": "H2186",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) VALMET TRACTOR 836647133  h 140",
+  "precio": 3634.61,
+  "cantidad": 6
+ },
+ {
+  "id": "H2188",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) RENAULT KANGOO \/ TWINGO Ø 68",
+  "precio": 1265.63,
+  "cantidad": 24
+ },
+ {
+  "id": "H2189",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) TOYOTA SW4 3.0 D --- TATA SUMO 2001=",
+  "precio": 3003.04,
+  "cantidad": 12
+ },
+ {
+  "id": "H2190",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) VW GOL 1.0 \/ GOLF IV 1.6 - FOX 1.6 C",
+  "precio": 1642.09,
+  "cantidad": 12
+ },
+ {
+  "id": "H2191",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) CATERPILLAR 1R 0714",
+  "precio": 3942.1,
+  "cantidad": 6
+ },
+ {
+  "id": "H2192",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) JOHN DEERE Nº RE 59754",
+  "precio": 3901.69,
+  "cantidad": 12
+ },
+ {
+  "id": "H2196",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FIAT 190-33 CURSOR Y EUROTRACKER f\/s",
+  "precio": 6319.2,
+  "cantidad": 6
+ },
+ {
+  "id": "H2196\/D",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT 190-33 CURSOR Y EUROTRACKER f\/d",
+  "precio": 5204.83,
+  "cantidad": 6
+ },
+ {
+  "id": "H2197",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) AUTOELEVADOR Ø106 Rosca 1\"x12 h98",
+  "precio": 2461.21,
+  "cantidad": 6
+ },
+ {
+  "id": "H2198",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) CUMMINS Nº3318853  (LF3000)",
+  "precio": 6776,
+  "cantidad": 3
+ },
+ {
+  "id": "H2201",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) FIAT PALIO Y SIENA motor FIRE",
+  "precio": 1553.8,
+  "cantidad": 20
+ },
+ {
+  "id": "H2202",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) FIAT AGCO Nº 4741272 Rosca 30x2  h 1",
+  "precio": 3817.4,
+  "cantidad": 6
+ },
+ {
+  "id": "H2205",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) TOYOTA HI LUX D4D-TDI \/ SW4 3.0",
+  "precio": 1622.36,
+  "cantidad": 12
+ },
+ {
+  "id": "H2206",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) CHEV. c\/m.MWM 2,8\/ NISSAN Front\/ S10",
+  "precio": 4961,
+  "cantidad": 4
+ },
+ {
+  "id": "H2211",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MOTOR PERKINS CV2473 (LF3356)",
+  "precio": 5294.57,
+  "cantidad": 6
+ },
+ {
+  "id": "H2212",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) F 100 3.9  SAPO  c\/M CUMMINS \/ CASE",
+  "precio": 4467.94,
+  "cantidad": 12
+ },
+ {
+  "id": "H2213",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) HYUNDAI R 290 LC7",
+  "precio": 3121.92,
+  "cantidad": 6
+ },
+ {
+  "id": "H2214",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) FORD TRANSIT Motor Puma 2.2L 2012=>",
+  "precio": 1697.04,
+  "cantidad": 12
+ },
+ {
+  "id": "H2221",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) ISUZU NPR",
+  "precio": 7721.3,
+  "cantidad": 1
+ },
+ {
+  "id": "H2222",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) FORD FOCUS, EXPLORER (Americano) 98=",
+  "precio": 2118.11,
+  "cantidad": 12
+ },
+ {
+  "id": "H2223",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) FORD RANGER 3.0 motor INTERNACIONAL",
+  "precio": 2134.58,
+  "cantidad": 12
+ },
+ {
+  "id": "H2225",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) TRACTOR HANNOMAG 35\/50 HP",
+  "precio": 2677.09,
+  "cantidad": 12
+ },
+ {
+  "id": "H2228",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) TRACTOR JOHN DEERE 4120 \/ 4320 \/452",
+  "precio": 2606.72,
+  "cantidad": 12
+ },
+ {
+  "id": "H2234",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) JCB, SERIE 200-400-500-900 CX LOADAL",
+  "precio": 4468.1,
+  "cantidad": 12
+ },
+ {
+  "id": "H2235",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) TOYOTA ETIOS 1.3; 1.5; 16V 2013>",
+  "precio": 1344.21,
+  "cantidad": 6
+ },
+ {
+  "id": "H2237",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(B) RENAULT (MAGNUN 420, 440 ) CATERPILL",
+  "precio": 6577.62,
+  "cantidad": 6
+ },
+ {
+  "id": "H2238",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(C) MOTORES DEUTZ WEICHAI (LOGUS)",
+  "precio": 1440.83,
+  "cantidad": 12
+ },
+ {
+  "id": "H2241",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) SURAN 1.6 MSI 2015=> ;UP 1.0 2014=>",
+  "precio": 1658.62,
+  "cantidad": 12
+ },
+ {
+  "id": "H2243",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) IVECO, STRALIS, CURSOR 2007=>",
+  "precio": 6482.91,
+  "cantidad": 1
+ },
+ {
+  "id": "H2247",
+  "categoria": "ACEITE UNIDAD SELLADA",
+  "nombre": "(A) RENAULT KWID 1.0  3CIL 66CV 2017==>",
+  "precio": 1378.43,
+  "cantidad": 1
+ },
+ {
+  "id": "T2003",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) FIAT 4636409 \/ GM 55759",
+  "precio": 3325.36,
+  "cantidad": 1
+ },
+ {
+  "id": "T2005EST",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) CUMMINS 101855\/120877 estopa",
+  "precio": 9498.68,
+  "cantidad": 1
+ },
+ {
+  "id": "T2007",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) KOMATSU \/ CUMMINS 158139",
+  "precio": 3063.38,
+  "cantidad": 1
+ },
+ {
+  "id": "T2008EST",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) CUMMINS 106621 \/ 124617 estopa",
+  "precio": 5503.26,
+  "cantidad": 1
+ },
+ {
+  "id": "T2010",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) FORD V8 64=>",
+  "precio": 1157.92,
+  "cantidad": 1
+ },
+ {
+  "id": "T2017",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) M.BENZ 1215, 1218, 1218L varios (h 1",
+  "precio": 1892.85,
+  "cantidad": 1
+ },
+ {
+  "id": "T2018",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) DEUTZ 13187 con copo",
+  "precio": 1265.83,
+  "cantidad": 1
+ },
+ {
+  "id": "T2024",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) FIAT R60",
+  "precio": 3369.93,
+  "cantidad": 1
+ },
+ {
+  "id": "T2025",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) FIAT 780R",
+  "precio": 1370.67,
+  "cantidad": 1
+ },
+ {
+  "id": "T2029",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) JOHN DEERE AR28110 \/ AR2635",
+  "precio": 1244.37,
+  "cantidad": 1
+ },
+ {
+  "id": "T2032",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) JOHN DEERE AJ-54668",
+  "precio": 2519.07,
+  "cantidad": 1
+ },
+ {
+  "id": "T2034",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) M.BENZ 710; 914; 1114  \/ TOYOTA BAND",
+  "precio": 1628.85,
+  "cantidad": 1
+ },
+ {
+  "id": "T2035",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) DODGE \/ BEDFORD \/ CHEVROLET",
+  "precio": 1283.57,
+  "cantidad": 1
+ },
+ {
+  "id": "T2036",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) FIAT SOMECA",
+  "precio": 1581.93,
+  "cantidad": 1
+ },
+ {
+  "id": "T2040",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) CATERPILLAR 5B-5937 \/ 5S484",
+  "precio": 4692.86,
+  "cantidad": 1
+ },
+ {
+  "id": "T2041",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) KOMATSU 6610-51-4400",
+  "precio": 3509.24,
+  "cantidad": 1
+ },
+ {
+  "id": "T2042",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) CATERPILLAR 5S0485 \/ 6H9999",
+  "precio": 2441.28,
+  "cantidad": 1
+ },
+ {
+  "id": "T2043",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) ZETOR Tractor",
+  "precio": 1436.51,
+  "cantidad": 1
+ },
+ {
+  "id": "T2045",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) DE CARLO",
+  "precio": 590.2,
+  "cantidad": 1
+ },
+ {
+  "id": "T2060",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) BERTOLINI MOTORES",
+  "precio": 1518.85,
+  "cantidad": 1
+ },
+ {
+  "id": "T2071",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) VALIANT II-III",
+  "precio": 1178.33,
+  "cantidad": 1
+ },
+ {
+  "id": "T2072",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) FIAT 600 E",
+  "precio": 834.93,
+  "cantidad": 1
+ },
+ {
+  "id": "T2087",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) FORD - V8 =>64",
+  "precio": 1553.44,
+  "cantidad": 1
+ },
+ {
+  "id": "T2093",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) ISUZU \/ YUEJIN",
+  "precio": 1212.83,
+  "cantidad": 1
+ },
+ {
+  "id": "T2098",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) M.BENZ 220 => 74",
+  "precio": 976.72,
+  "cantidad": 1
+ },
+ {
+  "id": "T2099",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) M.BENZ 190 - 230 - 250 H614",
+  "precio": 873.7,
+  "cantidad": 1
+ },
+ {
+  "id": "T2100",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) M.BENZ 608 => 85 \/ J.DEERE\/CLARK PF1",
+  "precio": 1657.59,
+  "cantidad": 1
+ },
+ {
+  "id": "T2101EST",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) M.BENZ h 180 filtrado doble PF1055-1",
+  "precio": 2984.47,
+  "cantidad": 1
+ },
+ {
+  "id": "T2102",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) M.BENZ 1112-1114 =>80  PF1190",
+  "precio": 1495.83,
+  "cantidad": 1
+ },
+ {
+  "id": "T2103",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) M.BENZ 1517 y otros H12111 80 =>",
+  "precio": 3631.75,
+  "cantidad": 6
+ },
+ {
+  "id": "T2104",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) M.BENZ 1526 - H1164",
+  "precio": 2196.44,
+  "cantidad": 1
+ },
+ {
+  "id": "T2105",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) M.BENZ varios c\/resorte H1275",
+  "precio": 4400.02,
+  "cantidad": 1
+ },
+ {
+  "id": "T2106",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) M.BENZ 608 85=> H1271",
+  "precio": 2213.37,
+  "cantidad": 1
+ },
+ {
+  "id": "T2108",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) MOTONIVELADORA RUSA DZ-98",
+  "precio": 3851.88,
+  "cantidad": 1
+ },
+ {
+  "id": "T2109",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) MITSUBISHI - CANTER =>80",
+  "precio": 1368.47,
+  "cantidad": 1
+ },
+ {
+  "id": "T2113",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) PERKINS INGLES 35389 (Motores)",
+  "precio": 1192.15,
+  "cantidad": 1
+ },
+ {
+  "id": "T2115",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) PEUGEOT 403 - 404",
+  "precio": 1747.11,
+  "cantidad": 1
+ },
+ {
+  "id": "T2117",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) PEUGEOT \/ INDENOR",
+  "precio": 1030.02,
+  "cantidad": 1
+ },
+ {
+  "id": "T2129",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) CAMION DAEWOO  c\/resorte",
+  "precio": 4011.22,
+  "cantidad": 1
+ },
+ {
+  "id": "T2130",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) IKA , CONTINENTAL, TORNADO, GLADIATO",
+  "precio": 1174.85,
+  "cantidad": 1
+ },
+ {
+  "id": "T2138",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) VOLVO - TITAN",
+  "precio": 2208.11,
+  "cantidad": 1
+ },
+ {
+  "id": "T2139",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) VOLVO VIKING - C\/ Copo",
+  "precio": 3007.05,
+  "cantidad": 1
+ },
+ {
+  "id": "T2144",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) CATERPILLAR 4J-0816",
+  "precio": 1728.71,
+  "cantidad": 1
+ },
+ {
+  "id": "T2145",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) INTERNACIONAL \/ CUMMINS 104",
+  "precio": 2957.07,
+  "cantidad": 1
+ },
+ {
+  "id": "T2149",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) M.BENZ c\/resorte 403-1840025  H12-11",
+  "precio": 4386.48,
+  "cantidad": 1
+ },
+ {
+  "id": "T2152EST",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) M.BENZ - filtrado doble PF1050\/1N",
+  "precio": 2134.64,
+  "cantidad": 1
+ },
+ {
+  "id": "T2164",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) M.BENZ 280",
+  "precio": 1888.94,
+  "cantidad": 1
+ },
+ {
+  "id": "T2165",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) KAMAZ \/ GAZ - turbo y normal",
+  "precio": 2835.97,
+  "cantidad": 1
+ },
+ {
+  "id": "T2166",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) DI TELLA 1500",
+  "precio": 1183.81,
+  "cantidad": 1
+ },
+ {
+  "id": "T2171",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) BELAVTOMAZ - turbo y normal",
+  "precio": 2779.84,
+  "cantidad": 1
+ },
+ {
+  "id": "T2174",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) ISUZU MOTORES h 155",
+  "precio": 1810.85,
+  "cantidad": 1
+ },
+ {
+  "id": "T2175",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) ISUZU MOTORES h 136",
+  "precio": 1329.04,
+  "cantidad": 1
+ },
+ {
+  "id": "T2176",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) ISUZU MOTORES h 140",
+  "precio": 1375.55,
+  "cantidad": 1
+ },
+ {
+  "id": "T2177",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) TOYOTA MOTORES h 126",
+  "precio": 1504.45,
+  "cantidad": 1
+ },
+ {
+  "id": "T2184",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) KOMATSU M-2725",
+  "precio": 3841.52,
+  "cantidad": 1
+ },
+ {
+  "id": "T2187",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) CHEVROLET VECTRA, ASTRA T.D. 99=>",
+  "precio": 814.9,
+  "cantidad": 1
+ },
+ {
+  "id": "T2193",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) SCHANGAY TRACTOR Øe85 Øi40x40 h95",
+  "precio": 827.21,
+  "cantidad": 1
+ },
+ {
+  "id": "T2194",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) LAIDONG motores Øe 100 Øi 22x22 h 12",
+  "precio": 845.8,
+  "cantidad": 1
+ },
+ {
+  "id": "T2195",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) VOLKSWAGEN - BORA - GOLF 1.9 TDI",
+  "precio": 1168.11,
+  "cantidad": 1
+ },
+ {
+  "id": "T2199",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) CLIO II, TWINGO, KANGOO 1.6 NAFTA  N",
+  "precio": 767.18,
+  "cantidad": 1
+ },
+ {
+  "id": "T2200",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) SSANGYO MUSSO c\/ motor M.BENZ 5 cil.",
+  "precio": 1497.47,
+  "cantidad": 1
+ },
+ {
+  "id": "T2203",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(C) NISSAN CP-14 y 16 or.1527490225",
+  "precio": 2679.97,
+  "cantidad": 1
+ },
+ {
+  "id": "T2204E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(B) CHEVROLET CORSA II, MERIVA, ASTRA to",
+  "precio": 571.87,
+  "cantidad": 1
+ },
+ {
+  "id": "T2207E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) PEUGEOT 206\/307,CITROEN C3 06\/2004=>",
+  "precio": 1573,
+  "cantidad": 1
+ },
+ {
+  "id": "T2209E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) FORD RANGER m\/Internacional Nº71180",
+  "precio": 1738.12,
+  "cantidad": 1
+ },
+ {
+  "id": "T2210",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) GRUA c\/motor Nisssan",
+  "precio": 8684.49,
+  "cantidad": 1
+ },
+ {
+  "id": "T2215E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) RENAULT MASTER Electrónico",
+  "precio": 2513.8,
+  "cantidad": 1
+ },
+ {
+  "id": "T2216E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) MERCEDES BENZ 712C-9-2125",
+  "precio": 2891.9,
+  "cantidad": 1
+ },
+ {
+  "id": "T2217E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) MERCEDES BENZ OF 1721 Electronico",
+  "precio": 3025,
+  "cantidad": 1
+ },
+ {
+  "id": "T2218E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) PEUG 206\/307,CITROEN C3=>05\/2004 De5",
+  "precio": 2178,
+  "cantidad": 1
+ },
+ {
+  "id": "T2219E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) ECOSPORT 1.4L TD \/ FIESTA V, 1.4L TD",
+  "precio": 1694,
+  "cantidad": 1
+ },
+ {
+  "id": "T2220E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) MERCEDES BENZ SPRINTER CDI 2.2 - 16",
+  "precio": 1936,
+  "cantidad": 1
+ },
+ {
+  "id": "T2224",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(D) MERCEDES BENZ ALEMAN",
+  "precio": 2269.06,
+  "cantidad": 1
+ },
+ {
+  "id": "T2226E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) VW SURAN 1.9 SDI ECOLOGICO 2009>",
+  "precio": 2525.27,
+  "cantidad": 1
+ },
+ {
+  "id": "T2227E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) FIAT PUNTO 1.3 JTD 16v 90cv  2009=>",
+  "precio": 3860.62,
+  "cantidad": 1
+ },
+ {
+  "id": "T2229E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) CHEVROLET S10  2.8 CTDI 6V 180CV",
+  "precio": 2928.2,
+  "cantidad": 1
+ },
+ {
+  "id": "T2230E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) RANGER 2.2; 3.2 Motor Puma 06\/2012>",
+  "precio": 1573,
+  "cantidad": 1
+ },
+ {
+  "id": "T2231E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) VOLKSWAGEN AMAROK 2.0 TD 163CV  2010",
+  "precio": 2541,
+  "cantidad": 1
+ },
+ {
+  "id": "T2232E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) MERCEDES BENZ 1938 LS, S Electronico",
+  "precio": 1947.3,
+  "cantidad": 1
+ },
+ {
+  "id": "T2233E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) FIAT LINEA, CINCUECENTO, BRAVO; 1.4,",
+  "precio": 587.06,
+  "cantidad": 1
+ },
+ {
+  "id": "T2236E",
+  "categoria": "ACEITE ELEMENTO",
+  "nombre": "(A) FIAT, IDEA, LINEA, PALIO, SIENA, PUN",
+  "precio": 2226.4,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0306T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 3X6 mm",
+  "precio": 47.08,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0406T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 4X6 mm",
+  "precio": 34.33,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0407T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 4X7 mm",
+  "precio": 56.93,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0508T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 5X8 mm",
+  "precio": 66.13,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0509T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 5X9 mm",
+  "precio": 94.83,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0510T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 5X10 mm",
+  "precio": 127.55,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0608T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(C) MANGUERA PVC CRISTAL 6X8 mm",
+  "precio": 48.68,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0609T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 6X9 mm",
+  "precio": 75.83,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0610T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 6X10 mm",
+  "precio": 108.28,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0611T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 6X11 mm",
+  "precio": 144.33,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0612T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 6X12 mm",
+  "precio": 183.55,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0710T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 7X10 mm",
+  "precio": 85.8,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0711T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 7X11 mm",
+  "precio": 121.3,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0712T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 7X12 mm",
+  "precio": 160.95,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0713T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 7X13 mm",
+  "precio": 202.7,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0714T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 7X14 mm",
+  "precio": 250.33,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0810T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(C) MANGUERA PVC CRISTAL 8X10 mm",
+  "precio": 62.53,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0811T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(C) MANGUERA PVC CRISTAL 8X11 mm",
+  "precio": 97.78,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0812T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 8X12 mm",
+  "precio": 134.75,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0813T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 8X13 mm",
+  "precio": 179.18,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0814T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 8X14 mm",
+  "precio": 224.53,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0911T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 9X11 mm",
+  "precio": 68.5,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0912T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 9X12 mm",
+  "precio": 106,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0913T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 9X13 mm",
+  "precio": 148.98,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0914T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(C) MANGUERA PVC CRISTAL 9X14 mm",
+  "precio": 195.93,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0915T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(C) MANGUERA PVC CRISTAL 9X15 mm",
+  "precio": 247.4,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI0916T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(C) MANGUERA PVC CRISTAL 9X16 mm",
+  "precio": 317.6,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI1012T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 10X12 mm",
+  "precio": 75.55,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI1014T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 10X14 mm",
+  "precio": 161.75,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI1216T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 12X16 mm",
+  "precio": 188.2,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI1418T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 14X18 mm",
+  "precio": 217.88,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI1620T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 16X20 mm",
+  "precio": 247.28,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI1925T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 19X25 mm",
+  "precio": 451.58,
+  "cantidad": 1
+ },
+ {
+  "id": "CRI2531T",
+  "categoria": "MANGUERA CRISTAL",
+  "nombre": "(A) MANGUERA PVC CRISTAL 25X31 mm",
+  "precio": 575.15,
+  "cantidad": 1
+ }
+]
