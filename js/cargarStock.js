@@ -1,4 +1,63 @@
-let productosCargados = [];
+document.addEventListener("DOMContentLoaded", function(event){
+    const stockAvaible = JSON.parse(localStorage.getItem("stockAvaibleJSON"));
+    createCategories(stockAvaible);
+    /* addOptions(stockAvaible); */
+})
+
+const addProd = () => {
+    console.log("Hola");
+}
+
+
+
+const createCategories = (array) => {
+    array.array.forEach(element => {
+        
+    });
+}
+
+/* const addCategories = (array) => {
+    createCategories();
+    const categoriesArray = [];
+    /* const categoryCreated = Object.values(array);
+    console.log(categoryCreated); 
+    array.forEach(element => {
+        
+        categoriesArray.push();
+    })
+    
+}
+
+const idGeneration = (category,stock) => {
+    const numProd = Math.floor(Math.random()*10000);
+    console.log(numProd);
+    const findElement = stock.find(element => element.categoria === category).id;
+    const codProd = findElement.slice(0,3);
+    console.log(codProd);
+    const prodId = codProd.concat(numProd);
+    console.log(prodId);
+    const filteredStock = stock.filter(element => element.categoria === category);
+    
+    validateprodId(prodId,filteredStock);
+    
+const addOptions = (array) => {
+    array.forEach(element => {
+        const option = document.createElement('option');
+        let categoryCreated = Object.values(element);
+        console.log(categoryCreated);
+        /* option.value = idProdEdit[1];
+        option.text = idProdEdit[0];
+        document.getElementById("prodCat").appendChild(option); */ 
+    })
+    
+} 
+
+
+
+
+
+
+/* let productosCargados = [];
 let productosCargadosJSON = [];
 
 const cargarNuevoProducto = () => {
