@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event){
+/* document.addEventListener("DOMContentLoaded", function(event){
     let productosEnStock = JSON.parse(localStorage.getItem("productosGuardadosJSON"));
 
     productosEnStock.forEach( function(prodEnStock) {
@@ -37,7 +37,7 @@ const realizarCompra = () => {
 
 
 
-document.getElementsById("realizarCompra").addEventListener("click",realizarCompra);
+document.getElementsById("realizarCompra").addEventListener("click",realizarCompra); */
 
 
 

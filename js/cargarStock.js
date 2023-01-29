@@ -1,59 +1,68 @@
+const stockAvaible = JSON.parse(localStorage.getItem('stockAvaibleJSON'));
+
 document.addEventListener("DOMContentLoaded", function(event){
-    const stockAvaible = JSON.parse(localStorage.getItem("stockAvaibleJSON"));
-    createCategories(stockAvaible);
-    /* addOptions(stockAvaible); */
+    const categoriesCreated = createCategories(stockAvaible);
+    renderCategories(categoriesCreated);
 })
 
 const addProd = () => {
-    console.log("Hola");
+    let prodCategory = document.getElementById('selectCategories').options[document.getElementById('selectCategories').selectedIndex].value;
+    let prodName = document.getElementById("prodName").value;
+    let prodQuant = document.getElementById("prodQuant").value;
+    let prodPrice = document.getElementById("prodPrice").value;
+    let prodId = idGeneration(prodCategory,stockAvaible);
+    console.log(prodId);
 }
 
 
 
 const createCategories = (array) => {
-    array.array.forEach(element => {
-        
+    const allCategories = [];
+    array.forEach(element => {
+        let categories = Object.values(element);
+        allCategories.push(categories[1])
     });
+    const categoriesArray = new Set(allCategories);
+    let categoriesAvaible = [...categoriesArray];
+    return categoriesAvaible;
+
 }
 
-/* const addCategories = (array) => {
-    createCategories();
-    const categoriesArray = [];
-    /* const categoryCreated = Object.values(array);
-    console.log(categoryCreated); 
+const renderCategories = (array) => {
     array.forEach(element => {
-        
-        categoriesArray.push();
+        const optionCreated = document.createElement('option');
+        optionCreated.value = element;
+        optionCreated.text = element;
+        document.getElementById('selectCategories').appendChild(optionCreated);
     })
     
 }
 
 const idGeneration = (category,stock) => {
     const numProd = Math.floor(Math.random()*10000);
-    console.log(numProd);
     const findElement = stock.find(element => element.categoria === category).id;
     const codProd = findElement.slice(0,3);
-    console.log(codProd);
     const prodId = codProd.concat(numProd);
-    console.log(prodId);
     const filteredStock = stock.filter(element => element.categoria === category);
     
-    validateprodId(prodId,filteredStock);
-    
-const addOptions = (array) => {
-    array.forEach(element => {
-        const option = document.createElement('option');
-        let categoryCreated = Object.values(element);
-        console.log(categoryCreated);
-        /* option.value = idProdEdit[1];
-        option.text = idProdEdit[0];
-        document.getElementById("prodCat").appendChild(option); */ 
-    })
-    
-} 
+    let validation = validateprodId(prodId,filteredStock);
+
+    if (validation) {
+        return prodId;
+    }
+
+}
+
+const validateprodId = (id,prodArray) => {
+    prodArray.find((id,prod) => {
+        let validId = (prod.id === id) ? false : true;
+        return validId
+    });
+    return id;
+}
 
 
-
+document.getElementById('addProduct').addEventListener('click',addProd);
 
 
 
@@ -87,10 +96,10 @@ if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
         document.getElementById("prodUnits").value = ''; 
     } else {
         validarCarga();
-    }
+    } 
 
-} 
-
+}
+/* 
 const actualizarStock = () => {
         Swal.fire({
             title: '¿Revisaste?',
@@ -120,23 +129,19 @@ const actualizarStock = () => {
                     confirmButtonColor:'#282A3A'})
             }
         })
-    }
+    } */
 
-
-document.getElementById("btn-agregarProd").addEventListener("click",cargarNuevoProducto);
-document.getElementById("btn-actualizarStock").addEventListener("click",actualizarStock);
-
-function validarCarga () {
+/* function validarCarga () {
     let prodName = document.getElementById("prodName").value;
     let prodUnits = document.getElementById("prodUnits").value;
     let prodPrice = document.getElementById("unitPrice").value;
 
-    /* Number.isInteger(prodName) ? mostrarError() */
+    /* Number.isInteger(prodName) ? mostrarError() 
 
     (prodName.trim() == '') ? mostrarError("Nombre del producto") : (prodPrice == 0) ? mostrarError("Precio") : (prodUnits == 0 ) ? mostrarError("Unidades") : false
-}
+} */
 
-function mostrarError(campo) {
+/* function mostrarError(campo) {  //* Sweet Alert
     Swal.fire({
         title: 'Error',
         text: 'Error al completar el campo: ' + campo,
@@ -146,13 +151,14 @@ function mostrarError(campo) {
         color: '#FCFFE7',
         confirmButtonText: '¡Entendido!',
         confirmButtonColor: '#ecab0f'})
-}
+} */
 
 
-const generarID = (prodCategory) => {
+/* const generarID = (prodCategory) => {
     let prodValueId = prodCategory.value;
     let prodNumber = Math.ceil(Math.random()*1000);;
     let prodCategoryId = prodValueId.concat(prodNumber);
     
     return prodCategoryId;
 }
+ */
