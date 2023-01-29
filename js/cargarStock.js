@@ -50,7 +50,6 @@ const idGeneration = (category,stock) => {
     if (validation) {
         return prodId;
     }
-
 }
 
 const validateprodId = (id,prodArray) => {
