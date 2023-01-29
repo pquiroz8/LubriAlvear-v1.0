@@ -1,20 +1,42 @@
-const stockAvaible = JSON.parse(localStorage.getItem('stockAvaibleJSON'));
+let stockAvaible = JSON.parse(localStorage.getItem('stockAvaibleJSON'));
 
 document.addEventListener("DOMContentLoaded", function(event){
     const categoriesCreated = createCategories(stockAvaible);
     renderCategories(categoriesCreated);
-})
+});
+
+let createdProductArray = [];
 
 const addProd = () => {
-    let prodCategory = document.getElementById('selectCategories').options[document.getElementById('selectCategories').selectedIndex].value;
+    let prodCategory = document.getElementById('selectCategories').options[document.getElementById('selectCategories').selectedIndex].text;
     let prodName = document.getElementById("prodName").value;
-    let prodQuant = document.getElementById("prodQuant").value;
-    let prodPrice = document.getElementById("prodPrice").value;
-    let prodId = idGeneration(prodCategory,stockAvaible);
-    console.log(prodId);
+    let prodQuant = parseInt(document.getElementById("prodQuant").value);
+    let prodPrice = parseFloat(document.getElementById("prodPrice").value);
+    let prodId;
+
+    if ((prodCategory != "Elija una categoría") && (prodName != "") && (prodPrice > 0) && (prodQuant > 0)) {
+        prodId = idGeneration(prodCategory,stockAvaible);
+        const createdProduct = {id:prodId, categoria:prodCategory, nombre:prodName, cantidad:prodQuant, precio:prodPrice}
+
+        let productCreatedNewRow = 
+            `<td class="fs-6">${createdProduct.id}</td>
+            <td class="fs-6">${createdProduct.categoria}</td>
+            <td class="fs-6">${createdProduct.nombre}</td>
+            <td class="fs-6"> $ ${createdProduct.precio}</td>
+            <td class="fs-6">${createdProduct.cantidad}</td>`;
+        document.getElementById("tableCreatedProd").insertRow().innerHTML = productCreatedNewRow;
+
+        createdProductArray.push(createdProduct);
+        console.log(createdProductArray);
+
+        document.getElementById("prodName").value = '';
+        document.getElementById("prodPrice").value = '';
+        document.getElementById("prodQuant").value = ''; 
+    } else {
+        formValidation();
+    }
+    
 }
-
-
 
 const createCategories = (array) => {
     const allCategories = [];
@@ -25,7 +47,6 @@ const createCategories = (array) => {
     const categoriesArray = new Set(allCategories);
     let categoriesAvaible = [...categoriesArray];
     return categoriesAvaible;
-
 }
 
 const renderCategories = (array) => {
@@ -40,7 +61,7 @@ const renderCategories = (array) => {
 
 const idGeneration = (category,stock) => {
     const numProd = Math.floor(Math.random()*10000);
-    const findElement = stock.find(element => element.categoria === category).id;
+    let findElement = stock.find(element => element.categoria === category).id;
     const codProd = findElement.slice(0,3);
     const prodId = codProd.concat(numProd);
     const filteredStock = stock.filter(element => element.categoria === category);
@@ -60,46 +81,76 @@ const validateprodId = (id,prodArray) => {
     return id;
 }
 
-
-document.getElementById('addProduct').addEventListener('click',addProd);
-
-
-
-/* let productosCargados = [];
-let productosCargadosJSON = [];
-
-const cargarNuevoProducto = () => {
-    let prodCategory = document.getElementById("prodCat").options[document.getElementById("prodCat").selectedIndex];
+const formValidation = () => {
     let prodName = document.getElementById("prodName").value;
-    let prodUnits = document.getElementById("prodUnits").value;
-    let prodPrice = document.getElementById("unitPrice").value;
-    let prodId = generarID(prodCategory);
+    let prodQuant = document.getElementById("prodQuant").value;
+    let prodPrice = document.getElementById("prodPrice").value;
+    let prodCategory = document.getElementById('selectCategories').options[document.getElementById('selectCategories').selectedIndex].text;
+    
 
-if ((prodName != '')&&(prodUnits > 0)&&( prodPrice > '0')) {
-        const productoNuevo = {id:prodId, category:prodCategory.text, name:prodName, units:prodUnits, price:prodPrice}
-        productosCargados.push(productoNuevo);
-        console.log(productosCargados);
-        productosCargadosJSON = localStorage.setItem("productosCargadosJSON", JSON.stringify(productosCargados));
+    if ((prodQuant < 0 )||(prodQuant == "" )) { mostrarError("Cantidad");}
+    if ((prodPrice < 0)||(prodPrice == "")){ mostrarError("Precio");}
+    if (prodName.trim() == ''){ mostrarError("Nombre del producto");}
+    if (prodCategory == "Elija una categoría") {mostrarError("Categoría")}
+} 
 
-        let nuevaFilaTabla = 
-            `<td class="newRow-id">${productoNuevo.id}</td>
-            <td class="newRow">${productoNuevo.category}</td>
-            <td class="newRow">${productoNuevo.name}</td>
-            <td class="newRow">${productoNuevo.price}</td>
-            <td class="newRow">${productoNuevo.units}</td>`;
+const mostrarError = (campo) => {  //* Sweet Alert
+    Swal.fire({
+        title: 'Error',
+        text: 'Error al completar el campo: ' + campo,
+        icon:'error',
+        iconColor:'#ecab0f',
+        background: '#282A3A',
+        color: '#FCFFE7',
+        confirmButtonText: '¡Entendido!',
+        confirmButtonColor: '#ecab0f'})
+}
 
-        document.getElementById("tbody").insertRow().innerHTML = nuevaFilaTabla;
-        
-        document.getElementById("prodName").value = '';
-        document.getElementById("unitPrice").value = '';
-        document.getElementById("prodUnits").value = ''; 
-    } else {
-        validarCarga();
-    } 
+const updateStock = () => {
+    console.log("estoy dentro de update");
+    console.log(createdProductArray);
+        Swal.fire({
+            title: '¿Revisaste?',
+            text:'Estás por modificar tu stock',
+            showDenyButton: true,
+            denyButtonText: `Voy a revisar`,
+            denyButtonColor:'#282A3A',
+            confirmButtonText: 'Todo en orden',
+            confirmButtonColor:'#ecab0f',
+        }).then((result) => {
+            if (result.isConfirmed) {
+            console.log(stockAvaible);
+            stockAvaible = stockAvaible.concat(createdProductArray);
+            console.log(stockAvaible);
+            /* localStorage.removeItem("productosCargadosJSON"); */
+            document.getElementById('tableCreatedProd').remove();
+            swal.fire({
+                title: 'Los productos fueron guardados',
+                text: 'Tu stock se ha modificado',
+                type: 'success',
+                iconColor:'#ecab0f',
+                confirmButtonColor:'#ecab0f'})
+            } else if (result.isDenied) {
+                swal.fire({
+                    title: 'OK, Revisá',
+                    text: 'Por ahora nada ha cambiado',
+                    type: 'error',
+                    iconColor:'#ecab0f',
+                    confirmButtonColor:'#282A3A'})
+            }
+        })
 
 }
-/* 
-const actualizarStock = () => {
+
+
+
+document.getElementById('addProduct').addEventListener('click',addProd);
+document.getElementById('updateStock').addEventListener('click',updateStock);
+
+
+
+
+/*const actualizarStock = () => {
         Swal.fire({
             title: '¿Revisaste?',
             text:'Estás por modificar tu stock',
@@ -129,35 +180,3 @@ const actualizarStock = () => {
             }
         })
     } */
-
-/* function validarCarga () {
-    let prodName = document.getElementById("prodName").value;
-    let prodUnits = document.getElementById("prodUnits").value;
-    let prodPrice = document.getElementById("unitPrice").value;
-
-    /* Number.isInteger(prodName) ? mostrarError() 
-
-    (prodName.trim() == '') ? mostrarError("Nombre del producto") : (prodPrice == 0) ? mostrarError("Precio") : (prodUnits == 0 ) ? mostrarError("Unidades") : false
-} */
-
-/* function mostrarError(campo) {  //* Sweet Alert
-    Swal.fire({
-        title: 'Error',
-        text: 'Error al completar el campo: ' + campo,
-        icon:'error',
-        iconColor:'#ecab0f',
-        background: '#282A3A',
-        color: '#FCFFE7',
-        confirmButtonText: '¡Entendido!',
-        confirmButtonColor: '#ecab0f'})
-} */
-
-
-/* const generarID = (prodCategory) => {
-    let prodValueId = prodCategory.value;
-    let prodNumber = Math.ceil(Math.random()*1000);;
-    let prodCategoryId = prodValueId.concat(prodNumber);
-    
-    return prodCategoryId;
-}
- */
