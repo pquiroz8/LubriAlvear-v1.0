@@ -4,16 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/ms-icon-70x70.png">
     <script src="https://kit.fontawesome.com/7e9a96f4c6.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="/colors/scss/custom.css">
     <title>LubriAlvear - Stock</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid bg-warning">
+            <a class="navbar-brand" href="#">LubriAlvear</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Nosotros</a>
+                    </li>
+                    
+                </ul>
+        </div>
+        </div>
+    </nav>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-6 my-4 p-2 border justify-content-center rounded bg-secondary border-bottom border-dark">
+            <div class="col-6 my-4 p-2 border justify-content-center rounded bg-secondary border-bottom border-warning">
                 
                 <form class="">
                     <label for="selectCategories" class="form-label text-warning" required>Categoría</label>
@@ -37,7 +59,7 @@
                     </div>
                     <div class="mt-3 d-flex align-content-center justify-content-evenly">
                         <button type="button" class="btn btn-warning text-dark btn-lg" id="addProduct"><i class="fa-solid fa-truck-ramp-box"></i>    Agregar Producto</button>
-                        <button type="reset" class="btn border-white text-warning btn-lg" id="clearForm"><i class="fa-solid fa-trash"></i>    Limpiar Formulario</button>
+                        <button type="reset" class="btn border-warning text-warning btn-lg" id="clearForm"><i class="fa-solid fa-trash"></i>    Limpiar Formulario</button>
                     </div>
                 </form>
             </div>

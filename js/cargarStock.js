@@ -40,7 +40,7 @@ const addProd = () => {
 
 const createCategories = (array) => {
     const allCategories = [];
-    array.forEach(element => {
+    array.forEach(element => { //!CAMBIO IMPORTANTE
         let categories = Object.values(element);
         allCategories.push(categories[1])
     });
@@ -119,10 +119,8 @@ const updateStock = () => {
             confirmButtonColor:'#ecab0f',
         }).then((result) => {
             if (result.isConfirmed) {
-            console.log(stockAvaible);
             stockAvaible = stockAvaible.concat(createdProductArray);
-            console.log(stockAvaible);
-            /* localStorage.removeItem("productosCargadosJSON"); */
+            localStorage.setItem("stockAvaibleJSON", JSON.stringify(stockAvaible));
             document.getElementById('tableCreatedProd').remove();
             swal.fire({
                 title: 'Los productos fueron guardados',
@@ -139,7 +137,18 @@ const updateStock = () => {
                     confirmButtonColor:'#282A3A'})
             }
         })
-
+    /* fetch("https://api.jsonbin.io/v3/b/63d6d849ace6f33a22cce7e5", {
+        method: "POST",
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+            'X-Access-Key': '$2b$10$LmhDY1MRNwzZ79kQL5zHnexuET.LoZnBvC00.6oEleQomhNtUR6f.'
+        },
+        body: JSON.stringify(stockAvaible)
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    }); */
 }
 
 
