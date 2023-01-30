@@ -40,7 +40,7 @@ const addProd = () => {
 
 const createCategories = (array) => {
     const allCategories = [];
-    array.forEach(element => { //!CAMBIO IMPORTANTE
+    array.forEach(element => {
         let categories = Object.values(element);
         allCategories.push(categories[1])
     });
