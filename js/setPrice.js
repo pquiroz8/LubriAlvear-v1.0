@@ -17,9 +17,6 @@ stockAvaible.forEach(element => {
 </div>`;
         document.getElementById('cardsContainer').appendChild(newCard);
     });
-    /* document.body.appendChild(newCard); */
-    
-    
 
 
 
