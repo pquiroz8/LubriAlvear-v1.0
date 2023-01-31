@@ -1,7 +1,6 @@
-
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
 <head>
+    <html lang="es"></html>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/ms-icon-70x70.png">
@@ -37,7 +36,7 @@
         <div class="row justify-content-center">
             <div class="col-6 my-4 p-2 border justify-content-center rounded bg-secondary border-bottom border-warning">
                 
-                <form class="">
+                <form id="mainForm">
                     <label for="selectCategories" class="form-label text-white" required>Categoría</label>
                     <select class="form-select my-3" id="selectCategories" aria-label="Categoría">
                         <option class="text-warning">Elija una categoría</option>
@@ -75,11 +74,12 @@
                         <th scope="col">Nombre</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Cantidad</th>
+                        <th scope="col">Eliminar</th>
                     </tr>
                 </thead>
                 <tbody class="text-dark" id="tableCreatedProd">
-                    <tr>
-                    </tr>
+                    <!-- <tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
@@ -93,14 +93,6 @@
     <script src="/js/cargarStock.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 
