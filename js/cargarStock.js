@@ -23,7 +23,8 @@ const addProd = () => {
             <td class="fs-6">${createdProduct.categoria}</td>
             <td class="fs-6">${createdProduct.nombre}</td>
             <td class="fs-6"> $ ${createdProduct.precio}</td>
-            <td class="fs-6">${createdProduct.cantidad}</td>`;
+            <td class="fs-6">${createdProduct.cantidad}</td>
+            <td class="fs-6 deleteButtons"><button class="btn btn-warning text-dark deleteButtons" id="${createdProduct.id}" onClick="deleteProduct(${createdProduct.id})"><i class="fa-solid fa-trash"></i></button></td>`;
         document.getElementById("tableCreatedProd").insertRow().innerHTML = productCreatedNewRow;
 
         createdProductArray.push(createdProduct);
@@ -94,7 +95,7 @@ const formValidation = () => {
     if (prodCategory == "Elija una categoría") {mostrarError("Categoría")}
 } 
 
-const mostrarError = (campo) => {  //* Sweet Alert
+const mostrarError = (campo) => {  //* Mensajes de error.
     Swal.fire({
         title: 'Error',
         text: 'Error al completar el campo: ' + campo,
@@ -107,15 +108,15 @@ const mostrarError = (campo) => {  //* Sweet Alert
 }
 
 const updateStock = () => {
-    console.log("estoy dentro de update");
     console.log(createdProductArray);
+    if (createdProductArray.length != 0) {
         Swal.fire({
-            title: '¿Revisaste?',
-            text:'Estás por modificar tu stock',
+            title: 'Estás por agregar productos a tu stock',
+            text:'¿Estás seguro?',
             showDenyButton: true,
             denyButtonText: `Voy a revisar`,
             denyButtonColor:'#282A3A',
-            confirmButtonText: 'Todo en orden',
+            confirmButtonText: 'Sí, seguro',
             confirmButtonColor:'#ecab0f',
         }).then((result) => {
             if (result.isConfirmed) {
@@ -137,55 +138,57 @@ const updateStock = () => {
                     confirmButtonColor:'#282A3A'})
             }
         })
-    /* fetch("https://api.jsonbin.io/v3/b/63d6d849ace6f33a22cce7e5", {
-        method: "POST",
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-            'X-Access-Key': '$2b$10$LmhDY1MRNwzZ79kQL5zHnexuET.LoZnBvC00.6oEleQomhNtUR6f.'
-        },
-        body: JSON.stringify(stockAvaible)
-    })
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
-    }); */
+    } else {
+        Swal.fire({
+            icon: 'error',
+            iconColor:'#ecab0f',
+            title: 'Nada por aquí, nada por allá',
+            text: 'No hay productos para cargar',
+            confirmButtonColor:'#ecab0f'
+        })
+    }
+    cleanForms();
 }
 
+const cleanForms = () => {
+    const forms = document.getElementById('mainForm');
+    forms.reset(); 
+}   
+
+const deleteProduct = (target) => {
+    const rowtoDelete= target.parentElement.parentElement;
+    console.log(rowtoDelete);
+    const prodToDelete = target.id;
+    
+    Swal.fire({
+        title: '¿Querés eliminar este producto?',
+        text:'¿Estás seguro?',
+        showDenyButton: true,
+        denyButtonText: `Mmm, mejor no`,
+        denyButtonColor:'#282A3A',
+        confirmButtonText: 'Sí, seguro',
+        confirmButtonColor:'#ecab0f',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            rowtoDelete.remove();
+            createdProductArray = createdProductArray.filter((item) => item.id != prodToDelete)
+        swal.fire({
+            title: 'El producto fue eliminado',
+            type: 'success',
+            iconColor:'#ecab0f',
+            confirmButtonColor:'#ecab0f'})
+        } else if (result.isDenied) {
+            swal.fire({
+                title: 'El elemento no se ha eliminado',
+                text: 'Por ahora nada ha cambiado',
+                type: 'error',
+                iconColor:'#ecab0f',
+                confirmButtonColor:'#282A3A'})
+        }
+    })
+    
+}
 
 
 document.getElementById('addProduct').addEventListener('click',addProd);
 document.getElementById('updateStock').addEventListener('click',updateStock);
-
-
-
-
-/*const actualizarStock = () => {
-        Swal.fire({
-            title: '¿Revisaste?',
-            text:'Estás por modificar tu stock',
-            showDenyButton: true,
-            confirmButtonText: 'Todo en orden',
-            confirmButtonColor:'#ecab0f',
-            denyButtonText: `Voy a revisar`,
-            denyButtonColor:'#282A3A'
-        }).then((result) => {
-            if (result.isConfirmed) {
-            let productosGuardadosJSON = localStorage.setItem("productosGuardadosJSON", JSON.stringify(productosCargados));
-            localStorage.removeItem("productosCargadosJSON");
-            document.getElementById("tbody").remove();
-            swal.fire({
-                title: 'Los productos fueron guardados',
-                text: 'Tu stock se ha modificado',
-                type: 'success',
-                iconColor:'#ecab0f',
-                confirmButtonColor:'#ecab0f'})
-            } else if (result.isDenied) {
-                swal.fire({
-                    title: 'OK, Revisá',
-                    text: 'Por ahora nada ha cambiado',
-                    type: 'error',
-                    iconColor:'#ecab0f',
-                    confirmButtonColor:'#282A3A'})
-            }
-        })
-    } */
