@@ -1,22 +1,72 @@
+cargarStock();
 
-let stockAvaible = JSON.parse(localStorage.getItem("stockAvaibleJSON"));
+const renderProduct =  () => {
+	let stockAvaible = JSON.parse(localStorage.getItem("stockAvaibleJSON"));
+	let newCard = "";
+	for(let producto of stockAvaible) {
+		newCard += 
+			`<div class="col-md-3 mb-3">
+				<div class="card m-2 p-2 bg-secondary border-warning text-center">
+					<img src="/images/favicon-96x96.png" class="card-img-top" alt="Logo LubriAlvear">
+					<div class="card-body">
+						<h5 class="card-title text-warning fs-6">${producto.nombre}</h5>
+						<p class="card-text text-light" fs-4> $ ${producto.precio} </p>
+						<button class="btn btn-warning text-dark text-center addToCart" id="${producto.id}" ><i class="fa-solid fa-cart-plus"></i>   Agregar al carrito</button>
+					</div>
+				</div>
+			</div>`;
+			document.getElementById('cardsContainer').innerHTML = newCard;
+		};
+	}
 
-stockAvaible.forEach(element => {
-    const newCard = document.createElement('div.d-flex'); //!CAMBIO IMPORTANTE
-    newCard.innerHTML = 
-`<div class="card my-4 ms-4 bg-secondary border-warning" style="width: 18rem;">
-    <img src="/images/lubrialavear.png" class="card-img-top" alt="Logo LubriAlvear">
-    <div class="card-body">
-        <h5 class="card-title text-warning fs-6"> [${element.id}] ${element.nombre} </h5>
-        <p class="card-text text-light"> Categoría: ${element.categoria} </p>
-        <p class="card-text text-light"> Precio actual: $ ${element.precio} </p>
-        <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-warning text-dark text-center btn-lg" id="updateProd"><i class="fa-solid fa-pen"></i>   Modificar Precio</button>
-        </div>
-    </div>
-</div>`;
-        document.getElementById('cardsContainer').appendChild(newCard);
-    });
+
+renderProduct();
+renderCartBtn();
+
+const addToCartBtn = document.querySelectorAll('.addToCart');
+addToCartBtn.forEach(el => { 
+    el.addEventListener('click',(e) => {
+        addToCart(e.target.id) })
+    })
+
+/* const setProductCart = (productCart) => {
+    localStorage.setItem("productCart", JSON.stringify(productCart));
+}
+
+const getProductCart = () => {
+    return JSON.parse(localStorage.getItem("productCart")) || [];
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,3 +1,4 @@
+cargarStock();
 let stockAvaible = JSON.parse(localStorage.getItem('stockAvaibleJSON'));
 
 document.addEventListener("DOMContentLoaded", function(event){
@@ -49,7 +50,6 @@ const createCategories = (array) => {
     let categoriesAvaible = [...categoriesArray];
     return categoriesAvaible;
 }
-
 const renderCategories = (array) => {
     array.forEach(element => {
         const optionCreated = document.createElement('option');
@@ -59,6 +59,8 @@ const renderCategories = (array) => {
     })
     
 }
+
+
 
 const idGeneration = (category,stock) => {
     const numProd = Math.floor(Math.random()*10000);
@@ -108,7 +110,6 @@ const mostrarError = (campo) => {  //* Mensajes de error.
 }
 
 const updateStock = () => {
-    console.log(createdProductArray);
     if (createdProductArray.length != 0) {
         Swal.fire({
             title: 'Estás por agregar productos a tu stock',
@@ -148,8 +149,17 @@ const updateStock = () => {
         })
     }
     cleanForms();
+    uploadNewProducts();
 }
 
+const uploadNewProducts = async() => {
+    await fetch ('https://api.jsonbin.io/v3/b/63d73618ace6f33a22cdae88', {
+        method: 'PUT',
+        body: JSON.stringify(createdProductArray),
+        headers: {'Content-type':'application/json',
+                'X-Access-Key':'$2b$10$z27qCt3/FVILsB0ZcqGcM.uNFYxKHYef/ctLS3evnZsDlFzj0L6nC'}
+    })
+}
 const cleanForms = () => {
     const forms = document.getElementById('mainForm');
     forms.reset(); 
@@ -161,7 +171,7 @@ const deleteProduct = (target) => {
     const prodToDelete = target.id;
     
     Swal.fire({
-        title: '¿Querés eliminar este producto?',
+        title: 'Vas a eliminar el producto ' + target.id,
         text:'¿Estás seguro?',
         showDenyButton: true,
         denyButtonText: `Mmm, mejor no`,
@@ -174,7 +184,7 @@ const deleteProduct = (target) => {
             createdProductArray = createdProductArray.filter((item) => item.id != prodToDelete)
         swal.fire({
             title: 'El producto fue eliminado',
-            type: 'success',
+            /* type: 'success', */
             iconColor:'#ecab0f',
             confirmButtonColor:'#ecab0f'})
         } else if (result.isDenied) {
