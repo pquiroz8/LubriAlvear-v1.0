@@ -1,6 +1,7 @@
 const cargarStock = async () => {
-const respuesta = await fetch("https://api.jsonbin.io/v3/b/63d73618ace6f33a22cdae88?meta=false");
+const respuesta = await fetch("/data/stock.json");
 const stockAvaible = await respuesta.json();
+setProductLS(stockAvaible);
 
 }
 

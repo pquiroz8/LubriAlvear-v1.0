@@ -167,7 +167,6 @@ const cleanForms = () => {
 
 const deleteProduct = (target) => {
     const rowtoDelete= target.parentElement.parentElement;
-    console.log(rowtoDelete);
     const prodToDelete = target.id;
     
     Swal.fire({
