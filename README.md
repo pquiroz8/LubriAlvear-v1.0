@@ -1,4 +1,4 @@
-# coderhouse_javascript-ProyectoFinal
+# LubriAlvear-v1.0
 
 Se desarrollará la funcionalidad de la carga de stock para un negocio real. Los datos de los productos son reales, suministrados por los propietarios del negocio.
 Los archivos Excel fueron convertidos a JSON y subidos a un host de JSON (JSON Bin) desde donde se consumen para su uso en la web.
